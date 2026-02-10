@@ -237,7 +237,7 @@ export default function ManualMode() {
       </div>
 
       <Tabs value={activeYear.toString()} onValueChange={(v) => setActiveYear(parseInt(v) as AcademicYear)}>
-        <TabsList className={`grid w-full grid-cols-${availableYears.length}`}>
+        <TabsList className="grid w-full" style={{ gridTemplateColumns: `repeat(${availableYears.length}, 1fr)` }}>
           {availableYears.map(year => (
             <TabsTrigger key={year} value={year.toString()}>{yearLabels[year]}</TabsTrigger>
           ))}
