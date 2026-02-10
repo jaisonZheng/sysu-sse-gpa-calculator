@@ -99,10 +99,10 @@ export function scoreToGpa(score: number): number {
 }
 
 // Score to GPA conversion for manual mode (4 point scale)
-// Formula: GPA = (score / 10) - 5, rounded to 1 decimal
-// Examples: 98 -> 4.8, 88 -> 3.8, 78 -> 2.8, 68 -> 1.8
+// Formula: GPA = (score - 50) / 10 = score/10 - 5
+// Examples: 99->4.9, 95->4.5, 88->3.8, 78->2.8, 68->1.8
 export function scoreToGpaManual(score: number): number {
   if (score < 60) return 0;
-  const gpa = Math.round(((score / 10) - 5) * 10) / 10;
+  const gpa = (score - 50) / 10;
   return Math.min(gpa, 5.0); // Cap at 5.0
 }
