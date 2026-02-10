@@ -10,6 +10,9 @@ import courseRoutes from './routes/courses';
 const app = express();
 const PORT = process.env.PORT || 3002;
 
+// Trust proxy (needed for express-rate-limit behind Nginx)
+app.set('trust proxy', 1);
+
 // Middleware
 app.use(cors());
 app.use(express.json());
