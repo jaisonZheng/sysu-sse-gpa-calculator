@@ -1,5 +1,5 @@
 import { chromium, Browser, Page } from 'playwright';
-import type { ScraperSession, UserGrade, CourseCategory, AcademicYear } from '../types';
+import type { ScraperSession, UserGrade, CourseCategory, AcademicYear, GradeStatus } from '../types';
 import { v4 as uuidv4 } from 'uuid';
 
 // In-memory session storage
@@ -227,134 +227,195 @@ export class ScraperService {
         }
       }
 
-      console.log(`Will fetch grades for ${yearOptions.length} academic years:`, yearOptions);
+      // Get all semester options (first and second semester)
+      const semesterOptions = ['第一学期', '第二学期'];
 
-      // Collect grades from all years
+      console.log(`Will fetch grades for ${yearOptions.length} academic years x 2 semesters`);
+
+      // Collect grades from all years and semesters
       const allGrades: UserGrade[] = [];
 
       for (const yearOption of yearOptions) {
-        console.log(`\nFetching grades for: ${yearOption}`);
+        for (const semesterOption of semesterOptions) {
+          console.log(`\nFetching grades for: ${yearOption} - ${semesterOption}`);
 
-        // Click on the year dropdown
-        const yearSelect = await page.$('.ant-select-selection-selected-value[title*="20"]');
-        if (yearSelect) {
-          await yearSelect.click();
-          await page.waitForTimeout(1000);
-
-          // Click on the specific year option
-          const option = await page.$(`.ant-select-dropdown-menu-item:has-text("${yearOption}")`);
-          if (option) {
-            await option.click();
+          // Step 1: Select the academic year
+          const yearSelect = await page.$('.ant-select-selection-selected-value[title*="20"]');
+          if (yearSelect) {
+            await yearSelect.click();
             await page.waitForTimeout(1000);
-          } else {
-            console.log(`Option ${yearOption} not found, skipping`);
-            await page.keyboard.press('Escape');
-            continue;
-          }
-        }
 
-        // Click the "查询" (Query) button to refresh the table
-        // Note: The button text has a space: "查 询"
-        const queryButton = await page.$('button.ant-btn-primary');
-        if (queryButton) {
-          const btnText = await queryButton.textContent();
-          if (btnText && btnText.includes('查')) {
-            console.log('Clicking query button...');
-            await queryButton.click();
-            // Wait for API call to complete and table to reload
-            await page.waitForTimeout(4000);
+            // Click on the specific year option
+            const option = await page.$(`.ant-select-dropdown-menu-item:has-text("${yearOption}")`);
+            if (option) {
+              await option.click();
+              await page.waitForTimeout(1000);
+            } else {
+              console.log(`Year option ${yearOption} not found, skipping`);
+              await page.keyboard.press('Escape');
+              continue;
+            }
+          }
+
+          // Step 2: Select the semester
+          // Find the semester dropdown (the one that shows "第一学期" or similar)
+          const semesterDropdowns = await page.$$('.ant-select');
+          let semesterSelect = null;
+          for (const dropdown of semesterDropdowns) {
+            const selectedValue = await dropdown.$eval('.ant-select-selection-selected-value', (el: any) => el.textContent).catch(() => null);
+            if (selectedValue && (selectedValue.includes('学期') || selectedValue.includes('第一') || selectedValue.includes('第二'))) {
+              semesterSelect = dropdown;
+              break;
+            }
+          }
+
+          if (semesterSelect) {
+            await semesterSelect.click();
+            await page.waitForTimeout(1000);
+
+            // Click on the specific semester option
+            const semesterOpt = await page.$(`.ant-select-dropdown-menu-item:has-text("${semesterOption}")`);
+            if (semesterOpt) {
+              await semesterOpt.click();
+              await page.waitForTimeout(1000);
+            } else {
+              console.log(`Semester option ${semesterOption} not found, skipping`);
+              await page.keyboard.press('Escape');
+              continue;
+            }
+          }
+
+          // Click the "查询" (Query) button to refresh the table
+          const queryButton = await page.$('button.ant-btn-primary');
+          if (queryButton) {
+            const btnText = await queryButton.textContent();
+            if (btnText && btnText.includes('查')) {
+              console.log('Clicking query button...');
+              await queryButton.click();
+              // Wait for API call to complete and table to reload
+              await page.waitForTimeout(4000);
+            } else {
+              console.log('Query button text mismatch:', btnText);
+              await page.waitForTimeout(3000);
+            }
           } else {
-            console.log('Query button text mismatch:', btnText);
+            console.log('Query button not found, waiting...');
             await page.waitForTimeout(3000);
           }
-        } else {
-          console.log('Query button not found, waiting...');
-          await page.waitForTimeout(3000);
-        }
 
-        // Wait for table to load
-        await page.waitForSelector('.ant-table-tbody tr', { timeout: 10000 });
-        await page.waitForTimeout(1000);
+          // Wait for table to load
+          await page.waitForSelector('.ant-table-tbody tr', { timeout: 10000 });
+          await page.waitForTimeout(1000);
 
-        // Extract grades from the table
-        const gradeRows = await page.$$eval('.ant-table-tbody tr', (rows: any[]) => {
-          return rows.map((row: any) => {
-            const cells = row.querySelectorAll('td');
-            return {
-              index: cells[0]?.textContent?.trim() || '',
-              category: cells[1]?.textContent?.trim() || '',
-              courseName: cells[2]?.textContent?.trim() || '',
-              teacher: cells[3]?.textContent?.trim() || '',
-              academicYear: cells[4]?.textContent?.trim() || '',
-              semester: cells[5]?.textContent?.trim() || '',
-              credits: cells[6]?.textContent?.trim() || '',
-              rawScore: cells[7]?.textContent?.trim() || '',
-              finalScore: cells[8]?.textContent?.trim() || '',
-              specialReason: cells[9]?.textContent?.trim() || '',
-              gpa: cells[10]?.textContent?.trim() || '',
-              examType: cells[11]?.textContent?.trim() || '',
-              passed: cells[12]?.textContent?.trim() || '',
-              classRank: cells[13]?.textContent?.trim() || ''
-            };
+          // Extract grades from the table
+          const gradeRows = await page.$$eval('.ant-table-tbody tr', (rows: any[]) => {
+            return rows.map((row: any) => {
+              const cells = row.querySelectorAll('td');
+              return {
+                index: cells[0]?.textContent?.trim() || '',
+                category: cells[1]?.textContent?.trim() || '',
+                courseName: cells[2]?.textContent?.trim() || '',
+                teacher: cells[3]?.textContent?.trim() || '',
+                academicYear: cells[4]?.textContent?.trim() || '',
+                semester: cells[5]?.textContent?.trim() || '',
+                credits: cells[6]?.textContent?.trim() || '',
+                rawScore: cells[7]?.textContent?.trim() || '',
+                finalScore: cells[8]?.textContent?.trim() || '',
+                specialReason: cells[9]?.textContent?.trim() || '',
+                gpa: cells[10]?.textContent?.trim() || '',
+                examType: cells[11]?.textContent?.trim() || '',
+                passed: cells[12]?.textContent?.trim() || '',
+                classRank: cells[13]?.textContent?.trim() || ''
+              };
+            });
           });
-        });
 
-        console.log(`Found ${gradeRows.length} rows for ${yearOption}`);
+          console.log(`Found ${gradeRows.length} rows for ${yearOption} - ${semesterOption}`);
 
-        // Parse year from the option (e.g., "2025-2026" -> 2025)
-        const yearMatch = yearOption.match(/(\d{4})-\d{4}/);
-        const tableYearStart = yearMatch ? parseInt(yearMatch[1]) : 2024;
+          // Parse year from the option (e.g., "2025-2026" -> 2025)
+          const yearMatch = yearOption.match(/(\d{4})-\d{4}/);
+          const tableYearStart = yearMatch ? parseInt(yearMatch[1]) : 2024;
 
-        // Determine academic year number (1, 2, or 3) based on enrollment year
-        let academicYearNumber: 1 | 2 | 3 = 1;
-        if (enrollmentYear > 0) {
-          const yearDiff = tableYearStart - enrollmentYear + 1;
-          if (yearDiff >= 1 && yearDiff <= 3) {
-            academicYearNumber = yearDiff as 1 | 2 | 3;
-          } else if (yearDiff > 3) {
-            academicYearNumber = 3;
-          }
-        } else {
-          // Fallback: use the order of years
-          const yearIndex = yearOptions.indexOf(yearOption);
-          academicYearNumber = Math.min(yearIndex + 1, 3) as 1 | 2 | 3;
-        }
-
-        // Process each row
-        for (const row of gradeRows) {
-          if (!row.courseName || row.courseName === '课程') continue;
-
-          const credits = parseFloat(row.credits) || 0;
-          const score = parseFloat(row.finalScore) || 0;
-          const gpa = parseFloat(row.gpa) || this.scoreToGpa(score);
-
-          // Map category
-          let category: CourseCategory = 'general_elective';
-          if (row.category.includes('公必')) {
-            category = 'public_required';
-          } else if (row.category.includes('专必')) {
-            category = 'major_required';
-          } else if (row.category.includes('专选')) {
-            category = 'major_elective';
+          // Determine academic year number (1, 2, or 3) based on enrollment year
+          let academicYearNumber: 1 | 2 | 3 = 1;
+          if (enrollmentYear > 0) {
+            const yearDiff = tableYearStart - enrollmentYear + 1;
+            if (yearDiff >= 1 && yearDiff <= 3) {
+              academicYearNumber = yearDiff as 1 | 2 | 3;
+            } else if (yearDiff > 3) {
+              academicYearNumber = 3;
+            }
+          } else {
+            // Fallback: use the order of years
+            const yearIndex = yearOptions.indexOf(yearOption);
+            academicYearNumber = Math.min(yearIndex + 1, 3) as 1 | 2 | 3;
           }
 
-          // Parse semester
-          let semester: 1 | 2 = 1;
-          if (row.semester.includes('第二') || row.semester.includes('2')) {
-            semester = 2;
-          }
+          // Process each row
+          for (const row of gradeRows) {
+            if (!row.courseName || row.courseName === '课程') continue;
 
-          allGrades.push({
-            sessionId,
-            courseCode: '',
-            courseName: row.courseName,
-            credits,
-            score,
-            gpa,
-            category,
-            academicYear: academicYearNumber,
-            semester
-          });
+            const credits = parseFloat(row.credits) || 0;
+
+            // Check for special grade status (deferred exam, P/NP)
+            let status: GradeStatus = 'normal';
+            let displayScore: string | undefined;
+            let score = 0;
+            let gpa = 0;
+
+            const finalScoreText = row.finalScore?.trim() || '';
+            const specialReasonText = row.specialReason?.trim() || '';
+
+            // Check for deferred exam (缓考)
+            if (specialReasonText.includes('缓考') || finalScoreText.includes('缓')) {
+              status = 'deferred';
+              displayScore = '缓考';
+            }
+            // Check for Pass/Not Pass grades
+            else if (finalScoreText === 'P' || finalScoreText === 'p' || finalScoreText.includes('合格')) {
+              status = 'pass';
+              displayScore = 'P';
+            }
+            else if (finalScoreText === 'NP' || finalScoreText === 'np' || finalScoreText.includes('不合格')) {
+              status = 'not_pass';
+              displayScore = 'NP';
+            }
+            // Normal numeric score
+            else {
+              score = parseFloat(finalScoreText) || 0;
+              gpa = parseFloat(row.gpa) || this.scoreToGpa(score);
+            }
+
+            // Map category
+            let category: CourseCategory = 'general_elective';
+            if (row.category.includes('公必')) {
+              category = 'public_required';
+            } else if (row.category.includes('专必')) {
+              category = 'major_required';
+            } else if (row.category.includes('专选')) {
+              category = 'major_elective';
+            }
+
+            // Parse semester from row data
+            let semester: 1 | 2 = 1;
+            if (row.semester.includes('第二') || row.semester.includes('2')) {
+              semester = 2;
+            }
+
+            allGrades.push({
+              sessionId,
+              courseCode: '',
+              courseName: row.courseName,
+              credits,
+              score,
+              gpa,
+              category,
+              academicYear: academicYearNumber,
+              semester,
+              status,
+              displayScore
+            });
+          }
         }
       }
 

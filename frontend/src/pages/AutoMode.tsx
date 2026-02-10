@@ -193,8 +193,15 @@ export default function AutoMode() {
                       <td className="border p-2">{course.courseName}</td>
                       <td className="border p-2">{course.courseCode}</td>
                       <td className="border p-2 text-center">{course.credits}</td>
-                      <td className="border p-2 text-center">{course.score}</td>
-                      <td className="border p-2 text-center">{course.gpa.toFixed(1)}</td>
+                      <td className="border p-2 text-center">
+                        {course.displayScore || course.score}
+                        {course.status === 'deferred' && <span className="ml-1 text-yellow-600 text-xs">(缓)</span>}
+                        {course.status === 'pass' && <span className="ml-1 text-green-600 text-xs">(P)</span>}
+                        {course.status === 'not_pass' && <span className="ml-1 text-red-600 text-xs">(NP)</span>}
+                      </td>
+                      <td className="border p-2 text-center">
+                        {course.status === 'normal' ? course.gpa.toFixed(1) : '-'}
+                      </td>
                       <td className="border p-2 text-center">{getCategoryLabel(course.category)}</td>
                       <td className="border p-2 text-center">{getYearLabel(course.academicYear)}</td>
                     </tr>

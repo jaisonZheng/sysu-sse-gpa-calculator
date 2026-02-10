@@ -89,7 +89,9 @@ router.post('/fetch-grades', async (req, res) => {
           gpa: grade.gpa, // Use GPA from scraper (official SYSU GPA)
           category: grade.category,
           academicYear: grade.academicYear,
-          semester: grade.semester
+          semester: grade.semester,
+          status: grade.status,
+          displayScore: grade.displayScore
         });
         insertedCount++;
       } catch (e) {
@@ -109,7 +111,9 @@ router.post('/fetch-grades', async (req, res) => {
       gpa: g.gpa,
       category: g.category,
       academicYear: g.academic_year,
-      semester: g.semester
+      semester: g.semester,
+      status: g.status,
+      displayScore: g.display_score
     })));
 
     // Save result

@@ -48,6 +48,8 @@ export function initDatabase() {
       category TEXT NOT NULL,
       academic_year INTEGER NOT NULL,
       semester INTEGER NOT NULL,
+      status TEXT DEFAULT 'normal',
+      display_score TEXT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
   `);
@@ -108,10 +110,12 @@ export function insertUserGrade(grade: {
   category: string;
   academicYear: number;
   semester: number;
+  status?: string;
+  displayScore?: string;
 }) {
   const stmt = db.prepare(`
-    INSERT INTO user_grades (session_id, course_code, course_name, credits, score, gpa, category, academic_year, semester)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO user_grades (session_id, course_code, course_name, credits, score, gpa, category, academic_year, semester, status, display_score)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   return stmt.run(
     grade.sessionId,
@@ -122,7 +126,9 @@ export function insertUserGrade(grade: {
     grade.gpa,
     grade.category,
     grade.academicYear,
-    grade.semester
+    grade.semester,
+    grade.status || 'normal',
+    grade.displayScore || null
   );
 }
 

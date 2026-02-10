@@ -2,6 +2,9 @@ export type CourseCategory = 'public_required' | 'major_required' | 'major_elect
 export type AcademicYear = 1 | 2 | 3;
 export type Semester = 1 | 2;
 
+// Grade status: normal, deferred (缓考), pass (P), not_pass (NP)
+export type GradeStatus = 'normal' | 'deferred' | 'pass' | 'not_pass';
+
 export interface Course {
   id?: number;
   courseCode: string;
@@ -22,6 +25,10 @@ export interface UserGrade {
   category: CourseCategory;
   academicYear: AcademicYear;
   semester: Semester;
+  // Special status for deferred exam or P/NP courses
+  status?: GradeStatus;
+  // Display value for special grades (e.g., "缓考", "P", "NP")
+  displayScore?: string;
   createdAt?: string;
 }
 

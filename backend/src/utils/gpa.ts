@@ -12,6 +12,17 @@ export function scoreToGpa(score: number): number {
   return 0;
 }
 
+// Check if a grade should be included in GPA calculation
+// Excludes: deferred exams (缓考), Pass/Not Pass courses
+export function shouldIncludeInCalculation(grade: UserGrade): boolean {
+  // Exclude deferred exams
+  if (grade.status === 'deferred') return false;
+  // Exclude Pass/Not Pass courses
+  if (grade.status === 'pass' || grade.status === 'not_pass') return false;
+  // Include normal grades
+  return true;
+}
+
 // Calculate weighted GPA
 export function calculateWeightedGpa(courses: { credits: number; gpa: number }[]): number {
   if (courses.length === 0) return 0;
@@ -50,24 +61,28 @@ export function calculateFinalGpa(
 
 // Calculate GPA from user grades
 // Formula: (All public required + Year 1 major required average GPA) * 0.5 + (Year 2 + Year 3 major required average GPA) * 0.5
+// Excludes: deferred exams, Pass/Not Pass courses
 export function calculateGpaFromGrades(grades: UserGrade[]): GpaResult {
+  // Filter out grades that shouldn't be included in calculation
+  const validGrades = grades.filter(shouldIncludeInCalculation);
+
   // All public required courses across all years (Year 1, 2, 3)
-  const allPublicCourses = grades
+  const allPublicCourses = validGrades
     .filter(g => g.category === 'public_required')
     .map(g => ({ credits: g.credits, gpa: g.gpa }));
 
   // Year 1 major required courses
-  const year1MajorCourses = grades
+  const year1MajorCourses = validGrades
     .filter(g => g.academicYear === 1 && g.category === 'major_required')
     .map(g => ({ credits: g.credits, gpa: g.gpa }));
 
   // Year 2 major required courses
-  const year2MajorCourses = grades
+  const year2MajorCourses = validGrades
     .filter(g => g.academicYear === 2 && g.category === 'major_required')
     .map(g => ({ credits: g.credits, gpa: g.gpa }));
 
   // Year 3 major required courses
-  const year3MajorCourses = grades
+  const year3MajorCourses = validGrades
     .filter(g => g.academicYear === 3 && g.category === 'major_required')
     .map(g => ({ credits: g.credits, gpa: g.gpa }));
 
