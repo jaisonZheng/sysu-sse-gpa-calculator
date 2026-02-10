@@ -5,7 +5,11 @@ import path from 'path';
 const router = Router();
 
 // Load courses data from JSON file
-const coursesDataPath = path.join(__dirname, '../data/courses.json');
+// Try dist/data first (production), then src/data (development)
+let coursesDataPath = path.join(__dirname, '../data/courses.json');
+if (!fs.existsSync(coursesDataPath)) {
+  coursesDataPath = path.join(__dirname, '../../src/data/courses.json');
+}
 const coursesData = JSON.parse(fs.readFileSync(coursesDataPath, 'utf-8'));
 
 // Get current academic year based on date

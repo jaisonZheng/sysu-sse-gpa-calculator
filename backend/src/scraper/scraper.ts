@@ -202,10 +202,10 @@ export class ScraperService {
         await page.waitForTimeout(1000);
 
         // Get all options from the dropdown
-        const options: string[] = await page.$$eval('.ant-select-dropdown-menu-item', (items: Element[]) => {
+        const options: string[] = await page.$$eval('.ant-select-dropdown-menu-item', (items: any[]) => {
           return items
-            .map((item: Element) => item.textContent?.trim())
-            .filter((text): text is string => !!text && text.includes('20'));
+            .map((item: any) => item.textContent?.trim())
+            .filter((text: any): text is string => !!text && text.includes('20'));
         });
 
         // Remove duplicates and sort
@@ -221,7 +221,7 @@ export class ScraperService {
 
       // If no options found, try to get current year from the page
       if (yearOptions.length === 0) {
-        const currentYearText = await page.$eval('.ant-select-selection-selected-value[title*="20"]', (el: Element) => el.getAttribute('title'));
+        const currentYearText = await page.$eval('.ant-select-selection-selected-value[title*="20"]', (el: any) => el.getAttribute('title'));
         if (currentYearText) {
           yearOptions.push(currentYearText.trim());
         }
@@ -277,8 +277,8 @@ export class ScraperService {
         await page.waitForTimeout(1000);
 
         // Extract grades from the table
-        const gradeRows = await page.$$eval('.ant-table-tbody tr', (rows: Element[]) => {
-          return rows.map((row) => {
+        const gradeRows = await page.$$eval('.ant-table-tbody tr', (rows: any[]) => {
+          return rows.map((row: any) => {
             const cells = row.querySelectorAll('td');
             return {
               index: cells[0]?.textContent?.trim() || '',
