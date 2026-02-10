@@ -1,0 +1,75 @@
+- generic [ref=e4]:
+  - img [ref=e6]
+  - img [ref=e8]
+  - generic [ref=e9]:
+    - banner [ref=e10]:
+      - generic [ref=e14]:
+        - generic [ref=e15] [cursor=pointer]: 系统操作手册
+        - generic [ref=e17] [cursor=pointer]: 常见问题
+        - generic [ref=e19] [cursor=pointer]: En/中
+    - main [ref=e20]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: 用户登录
+        - generic [ref=e25]:
+          - tablist [ref=e26]:
+            - generic [ref=e27]:
+              - generic:
+                - generic:
+                  - 'generic "图标: left"':
+                    - img
+              - generic:
+                - generic:
+                  - 'generic "图标: right"':
+                    - img
+              - generic [ref=e31]:
+                - tab "学生" [selected] [ref=e32] [cursor=pointer]
+                - tab "教师" [ref=e33] [cursor=pointer]
+                - tab "教务人员" [ref=e34] [cursor=pointer]
+          - tabpanel [ref=e36]:
+            - button "NetID登录" [ref=e37] [cursor=pointer]:
+              - generic: NetID登录
+            - generic [ref=e38]:
+              - link "教务部主页" [ref=e39] [cursor=pointer]:
+                - /url: http://jwb.sysu.edu.cn/
+                - generic: 教务部主页
+              - link "选课操作手册" [ref=e40] [cursor=pointer]:
+                - /url: ./document/附件1：选课操作手册.docx
+                - generic: 选课操作手册
+              - link "学生常见问题" [ref=e41] [cursor=pointer]:
+                - /url: /jwxt/#/studentQuestion
+                - generic: 学生常见问题
+        - generic [ref=e42]:
+          - generic [ref=e43]: 为了更好的体验，请使用以下浏览器
+          - generic [ref=e44]:
+            - link "Chrome Chrome" [ref=e45] [cursor=pointer]:
+              - /url: https://www.google.cn/intl/zh-CN/chrome/
+              - img "Chrome" [ref=e46]
+              - generic [ref=e47]: Chrome
+            - link "Edge Edge" [ref=e48] [cursor=pointer]:
+              - /url: https://www.microsoft.com/zh-cn/edge
+              - img "Edge" [ref=e49]
+              - generic [ref=e50]: Edge
+            - link "Firefox Firefox" [ref=e51] [cursor=pointer]:
+              - /url: https://www.firefox.com.cn/
+              - img "Firefox" [ref=e52]
+              - generic [ref=e53]: Firefox
+            - link "Safari Safari" [ref=e54] [cursor=pointer]:
+              - /url: https://www.apple.com/cn/safari/
+              - img "Safari" [ref=e55]
+              - generic [ref=e56]: Safari
+    - contentinfo [ref=e57]:
+      - generic [ref=e59]:
+        - generic [ref=e60]: 常用链接
+        - list [ref=e61]:
+          - listitem [ref=e62] [cursor=pointer]:
+            - link "本科教学信息平台" [ref=e63]:
+              - /url: https://jwb.sysu.edu.cn/portal
+              - generic [ref=e64]: 本科教学信息平台
+          - listitem [ref=e65] [cursor=pointer]:
+            - link " 教务部主页" [ref=e66]:
+              - /url: http://jwb.sysu.edu.cn/
+              - generic [ref=e67]: 
+              - generic [ref=e68]: 教务部主页
+      - generic [ref=e69]:
+        - generic [ref=e70]: 本系统为互联网非涉密系统，严禁处理与传输国家秘密
+        - generic [ref=e71]: COPYRIGHT © 2017-2024 SUN YAT-SEN UNIVERSITY

@@ -201,14 +201,14 @@ export class ScraperService {
         await yearSelect.click();
         await page.waitForTimeout(1000);
 
-        // Get all options from the dropdown
+        // Get all options from the dropdown (keep original text with leading space for matching)
         const options: string[] = await page.$$eval('.ant-select-dropdown-menu-item', (items: any[]) => {
           return items
-            .map((item: any) => item.textContent?.trim())
+            .map((item: any) => item.textContent)
             .filter((text: any): text is string => !!text && text.includes('20'));
         });
 
-        // Remove duplicates and sort
+        // Remove duplicates and sort (keep original text with leading space)
         const uniqueOptions: string[] = [...new Set(options)];
         console.log('Available year options:', uniqueOptions);
 
@@ -223,13 +223,14 @@ export class ScraperService {
       if (yearOptions.length === 0) {
         const currentYearText = await page.$eval('.ant-select-selection-selected-value[title*="20"]', (el: any) => el.getAttribute('title'));
         if (currentYearText) {
-          yearOptions.push(currentYearText.trim());
+          // Keep original text (may have leading space)
+          yearOptions.push(currentYearText);
         }
       }
 
       // Get all semester options (first and second semester)
       // Note: The option text has a leading space: " 第一学期", " 第二学期"
-      const semesterOptions = [' 第一学期', ' 第二学期'];
+      const semesterOptions = [' 第一学期', ' 第二学期', ' 第三学期'];
 
       console.log(`Will fetch grades for ${yearOptions.length} academic years x 2 semesters`);
 
@@ -331,7 +332,7 @@ export class ScraperService {
             });
           });
 
-          console.log(`Found ${gradeRows.length} rows for ${yearOption} - ${semesterOption}`);
+          console.log(`Found ${gradeRows.length} rows for year: '${yearOption}', semester: '${semesterOption}'`);
 
           // Parse year from the option (e.g., "2025-2026" -> 2025)
           const yearMatch = yearOption.match(/(\d{4})-\d{4}/);

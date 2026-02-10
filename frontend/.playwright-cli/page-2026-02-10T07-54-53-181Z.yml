@@ -1,0 +1,613 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - list [ref=e8]:
+      - listitem [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+        - generic [ref=e11]:
+          - paragraph [ref=e12]: 郑则燊
+          - paragraph [ref=e13]: (24344151)
+      - listitem [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]:
+            - img [ref=e17]
+          - paragraph [ref=e18]: 首页
+      - listitem [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]:
+          - paragraph [ref=e21]:
+            - img [ref=e22]
+          - paragraph [ref=e23]: 语言
+      - listitem [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - img [ref=e27]
+          - paragraph [ref=e28]: 帮助
+      - listitem [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]:
+          - paragraph [ref=e31]:
+            - img [ref=e32]
+          - paragraph [ref=e33]: 消息
+      - listitem [ref=e34] [cursor=pointer]:
+        - generic [ref=e35]:
+          - paragraph [ref=e36]:
+            - img [ref=e37]
+          - paragraph [ref=e38]: 退出
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e45]: 当前位置：首页
+            - text: /
+          - generic [ref=e47]: 我的成绩
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - heading "使用提示：" [level=3] [ref=e52]
+            - paragraph [ref=e53]:
+              - text: 1. 学年不选，学期不选，即可查询所有科目的成绩。
+              - text: 2. 在成绩查询结果表格，点击课程名称，可将该课程置灰，表格顶部总学分及总绩点实时变动，实现自定义计算绩点功能(比如置灰所有公选科目)。
+              - text: 3. 在成绩查询结果表格，点击 该科目的成绩，即可查询该科目的具体分项成绩，比如平时分+期末分，以及具体权值。
+              - text: 4. 课程成绩由教师录入、各开课单位审核后公布。各开课单位教务秘书联系方式查询网址：
+              - link "https://jwb.sysu.edu.cn/lx/school" [ref=e54] [cursor=pointer]:
+                - /url: https://jwb.sysu.edu.cn/lx/school
+          - generic [ref=e55]:
+            - heading "成绩查询" [level=3] [ref=e56]
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - emphasis [ref=e60]: "*"
+                  - text: "培养类别:"
+                - combobox [ref=e62] [cursor=pointer]:
+                  - generic ",主修" [ref=e64]: 主修
+                  - generic [ref=e65]: 
+              - generic [ref=e66]:
+                - generic [ref=e67]: "学年:"
+                - combobox [ref=e69] [cursor=pointer]:
+                  - generic ",2024-2025" [ref=e716]: 2024-2025
+                  - generic [ref=e71]: 
+                  - generic [ref=e72]: 
+              - generic [ref=e73]:
+                - generic [ref=e74]: "学期:"
+                - combobox [ref=e76] [cursor=pointer]:
+                  - generic ",第二学期" [ref=e1049]: 第二学期
+                  - generic [ref=e79]: 
+                  - generic [ref=e80]: 
+              - generic [ref=e81]:
+                - button "查 询" [ref=e82] [cursor=pointer]
+                - button "我的成绩单" [ref=e83] [cursor=pointer]
+            - generic [ref=e84]:
+              - generic [ref=e85]: 已修学分：39.5 分
+              - generic [ref=e86]: 已获学分：39.5 分
+              - generic [ref=e87]: 平均学分绩点：3.8633
+              - generic [ref=e88] [cursor=pointer]:
+                - checkbox "公必" [checked] [ref=e90]
+                - text: 公必
+              - generic [ref=e92] [cursor=pointer]:
+                - checkbox "专必" [checked] [ref=e94]
+                - text: 专必
+              - generic [ref=e96] [cursor=pointer]:
+                - checkbox "公选" [checked] [ref=e98]
+                - text: 公选
+              - generic [ref=e100] [cursor=pointer]:
+                - checkbox "专选" [checked] [ref=e102]
+                - text: 专选
+              - generic [ref=e104] [cursor=pointer]:
+                - checkbox "荣誉课程" [ref=e106]
+                - text: 荣誉课程
+            - table [ref=e116]:
+              - rowgroup [ref=e131]:
+                - row "序号 类别 课程 教师 学年 学期 学分 原始成绩 最终成绩 特殊原因 绩点 考试性质 是否通过 教学班排名" [ref=e293]:
+                  - columnheader "序号" [ref=e133]
+                  - columnheader "类别" [ref=e134]
+                  - columnheader "课程" [ref=e135]
+                  - columnheader "教师" [ref=e136]
+                  - columnheader "学年" [ref=e137]
+                  - columnheader "学期" [ref=e138]
+                  - columnheader "学分" [ref=e139]
+                  - columnheader "原始成绩" [ref=e294]
+                  - columnheader "最终成绩" [ref=e140]
+                  - columnheader "特殊原因" [ref=e141]
+                  - columnheader "绩点" [ref=e142]
+                  - columnheader "考试性质" [ref=e143]
+                  - columnheader "是否通过" [ref=e144]
+                  - columnheader "教学班排名" [ref=e145]
+              - rowgroup [ref=e295]:
+                - row "1 公必 毛泽东思想和中国特色社会主义理论体系概论 周寒 2025-2026 第一学期 3 86.5 87 3.7 期末成绩 是 14/86" [ref=e1382]:
+                  - cell "1" [ref=e1383]: "1"
+                  - cell "公必" [ref=e1384]:
+                    - generic [ref=e1385]: 公必
+                  - cell "毛泽东思想和中国特色社会主义理论体系概论" [ref=e1386]:
+                    - generic [ref=e1387] [cursor=pointer]: 毛泽东思想和中国特色社会主义理论体系概论
+                  - cell "周寒" [ref=e1388]
+                  - cell "2025-2026" [ref=e1389]
+                  - cell "第一学期" [ref=e1390]
+                  - cell "3" [ref=e1391]
+                  - cell "86.5" [ref=e1392]
+                  - cell "87" [ref=e1393]:
+                    - generic [ref=e1394]: "87"
+                  - cell [ref=e1395]
+                  - cell "3.7" [ref=e1396]
+                  - cell "期末成绩" [ref=e1397]
+                  - cell "是" [ref=e1398]
+                  - cell "14/86" [ref=e1399]
+                - row "2 公必 体育 周才 2025-2026 第一学期 0.5 100 100 5 期末成绩 是 1/33" [ref=e1400]:
+                  - cell "2" [ref=e1401]: "2"
+                  - cell "公必" [ref=e1402]:
+                    - generic [ref=e1403]: 公必
+                  - cell "体育" [ref=e1404]:
+                    - generic [ref=e1405] [cursor=pointer]: 体育
+                  - cell "周才" [ref=e1406]
+                  - cell "2025-2026" [ref=e1407]
+                  - cell "第一学期" [ref=e1408]
+                  - cell "0.5" [ref=e1409]
+                  - cell "100" [ref=e1410]
+                  - cell "100" [ref=e1411]:
+                    - generic [ref=e1412]: "100"
+                  - cell [ref=e1413]
+                  - cell "5" [ref=e1414]
+                  - cell "期末成绩" [ref=e1415]
+                  - cell "是" [ref=e1416]
+                  - cell "1/33" [ref=e1417]
+                - row "3 专必 高等数学一（I） 黄天骁 2025-2026 第一学期 5 93.4 93 4.3 期末成绩 是 3/69" [ref=e1418]:
+                  - cell "3" [ref=e1419]: "3"
+                  - cell "专必" [ref=e1420]:
+                    - generic [ref=e1421]: 专必
+                  - cell "高等数学一（I）" [ref=e1422]:
+                    - generic [ref=e1423] [cursor=pointer]: 高等数学一（I）
+                  - cell "黄天骁" [ref=e1424]
+                  - cell "2025-2026" [ref=e1425]
+                  - cell "第一学期" [ref=e1426]
+                  - cell "5" [ref=e1427]
+                  - cell "93.4" [ref=e1428]
+                  - cell "93" [ref=e1429]:
+                    - generic [ref=e1430]: "93"
+                  - cell [ref=e1431]
+                  - cell "4.3" [ref=e1432]
+                  - cell "期末成绩" [ref=e1433]
+                  - cell "是" [ref=e1434]
+                  - cell "3/69" [ref=e1435]
+                - row "4 专必 线性代数 吴菊杰 2025-2026 第一学期 3 98.2 98 4.8 期末成绩 是 5/31" [ref=e1436]:
+                  - cell "4" [ref=e1437]: "4"
+                  - cell "专必" [ref=e1438]:
+                    - generic [ref=e1439]: 专必
+                  - cell "线性代数" [ref=e1440]:
+                    - generic [ref=e1441] [cursor=pointer]: 线性代数
+                  - cell "吴菊杰" [ref=e1442]
+                  - cell "2025-2026" [ref=e1443]
+                  - cell "第一学期" [ref=e1444]
+                  - cell "3" [ref=e1445]
+                  - cell "98.2" [ref=e1446]
+                  - cell "98" [ref=e1447]:
+                    - generic [ref=e1448]: "98"
+                  - cell [ref=e1449]
+                  - cell "4.8" [ref=e1450]
+                  - cell "期末成绩" [ref=e1451]
+                  - cell "是" [ref=e1452]
+                  - cell "5/31" [ref=e1453]
+                - row "5 专必 程序设计Ⅰ 李涛涛 2025-2026 第一学期 3 94 94 4.4 期末成绩 是 8/33" [ref=e1454]:
+                  - cell "5" [ref=e1455]: "5"
+                  - cell "专必" [ref=e1456]:
+                    - generic [ref=e1457]: 专必
+                  - cell "程序设计Ⅰ" [ref=e1458]:
+                    - generic [ref=e1459] [cursor=pointer]: 程序设计Ⅰ
+                  - cell "李涛涛" [ref=e1460]
+                  - cell "2025-2026" [ref=e1461]
+                  - cell "第一学期" [ref=e1462]
+                  - cell "3" [ref=e1463]
+                  - cell "94" [ref=e1464]
+                  - cell "94" [ref=e1465]:
+                    - generic [ref=e1466]: "94"
+                  - cell [ref=e1467]
+                  - cell "4.4" [ref=e1468]
+                  - cell "期末成绩" [ref=e1469]
+                  - cell "是" [ref=e1470]
+                  - cell "8/33" [ref=e1471]
+                - row "6 专必 程序设计Ⅰ实验 李涛涛 2025-2026 第一学期 1 94 94 4.4 期末成绩 是 7/31" [ref=e1472]:
+                  - cell "6" [ref=e1473]: "6"
+                  - cell "专必" [ref=e1474]:
+                    - generic [ref=e1475]: 专必
+                  - cell "程序设计Ⅰ实验" [ref=e1476]:
+                    - generic [ref=e1477] [cursor=pointer]: 程序设计Ⅰ实验
+                  - cell "李涛涛" [ref=e1478]
+                  - cell "2025-2026" [ref=e1479]
+                  - cell "第一学期" [ref=e1480]
+                  - cell "1" [ref=e1481]
+                  - cell "94" [ref=e1482]
+                  - cell "94" [ref=e1483]:
+                    - generic [ref=e1484]: "94"
+                  - cell [ref=e1485]
+                  - cell "4.4" [ref=e1486]
+                  - cell "期末成绩" [ref=e1487]
+                  - cell "是" [ref=e1488]
+                  - cell "7/31" [ref=e1489]
+                - row "7 专必 软件工程新生研讨课 南雨宏,吴嘉婧,吴炜滨,王焱林,苏玉鑫,郑子彬,陈建国,陈文清,黄袁 2025-2026 第一学期 1 100 100 5 期末成绩 是 1/226" [ref=e1490]:
+                  - cell "7" [ref=e1491]: "7"
+                  - cell "专必" [ref=e1492]:
+                    - generic [ref=e1493]: 专必
+                  - cell "软件工程新生研讨课" [ref=e1494]:
+                    - generic [ref=e1495] [cursor=pointer]: 软件工程新生研讨课
+                  - cell "南雨宏,吴嘉婧,吴炜滨,王焱林,苏玉鑫,郑子彬,陈建国,陈文清,黄袁" [ref=e1496]
+                  - cell "2025-2026" [ref=e1497]
+                  - cell "第一学期" [ref=e1498]
+                  - cell "1" [ref=e1499]
+                  - cell "100" [ref=e1500]
+                  - cell "100" [ref=e1501]:
+                    - generic [ref=e1502]: "100"
+                  - cell [ref=e1503]
+                  - cell "5" [ref=e1504]
+                  - cell "期末成绩" [ref=e1505]
+                  - cell "是" [ref=e1506]
+                  - cell "1/226" [ref=e1507]
+                - row "8 专必 数据结构与算法 王若梅,蒋子规 2025-2026 第一学期 3 77.2 77 2.7 期末成绩 是 79/106" [ref=e1508]:
+                  - cell "8" [ref=e1509]: "8"
+                  - cell "专必" [ref=e1510]:
+                    - generic [ref=e1511]: 专必
+                  - cell "数据结构与算法" [ref=e1512]:
+                    - generic [ref=e1513] [cursor=pointer]: 数据结构与算法
+                  - cell "王若梅,蒋子规" [ref=e1514]
+                  - cell "2025-2026" [ref=e1515]
+                  - cell "第一学期" [ref=e1516]
+                  - cell "3" [ref=e1517]
+                  - cell "77.2" [ref=e1518]
+                  - cell "77" [ref=e1519]:
+                    - generic [ref=e1520]: "77"
+                  - cell [ref=e1521]
+                  - cell "2.7" [ref=e1522]
+                  - cell "期末成绩" [ref=e1523]
+                  - cell "是" [ref=e1524]
+                  - cell "79/106" [ref=e1525]
+                - row "9 专必 数据结构与算法实验 王若梅,蒋子规 2025-2026 第一学期 1 91.5 92 4.2 期末成绩 是 6/110" [ref=e1526]:
+                  - cell "9" [ref=e1527]: "9"
+                  - cell "专必" [ref=e1528]:
+                    - generic [ref=e1529]: 专必
+                  - cell "数据结构与算法实验" [ref=e1530]:
+                    - generic [ref=e1531] [cursor=pointer]: 数据结构与算法实验
+                  - cell "王若梅,蒋子规" [ref=e1532]
+                  - cell "2025-2026" [ref=e1533]
+                  - cell "第一学期" [ref=e1534]
+                  - cell "1" [ref=e1535]
+                  - cell "91.5" [ref=e1536]
+                  - cell "92" [ref=e1537]:
+                    - generic [ref=e1538]: "92"
+                  - cell [ref=e1539]
+                  - cell "4.2" [ref=e1540]
+                  - cell "期末成绩" [ref=e1541]
+                  - cell "是" [ref=e1542]
+                  - cell "6/110" [ref=e1543]
+                - row "10 专必 计算机组成原理实验 吴炜滨 2025-2026 第一学期 1 98.1 98 4.8 期末成绩 是 26/108" [ref=e1544]:
+                  - cell "10" [ref=e1545]: "10"
+                  - cell "专必" [ref=e1546]:
+                    - generic [ref=e1547]: 专必
+                  - cell "计算机组成原理实验" [ref=e1548]:
+                    - generic [ref=e1549] [cursor=pointer]: 计算机组成原理实验
+                  - cell "吴炜滨" [ref=e1550]
+                  - cell "2025-2026" [ref=e1551]
+                  - cell "第一学期" [ref=e1552]
+                  - cell "1" [ref=e1553]
+                  - cell "98.1" [ref=e1554]
+                  - cell "98" [ref=e1555]:
+                    - generic [ref=e1556]: "98"
+                  - cell [ref=e1557]
+                  - cell "4.8" [ref=e1558]
+                  - cell "期末成绩" [ref=e1559]
+                  - cell "是" [ref=e1560]
+                  - cell "26/108" [ref=e1561]
+                - row "11 专必 软件工程实训（初级） 王乐球 2025-2026 第一学期 2 91.9 92 4.2 期末成绩 是 9/101" [ref=e1562]:
+                  - cell "11" [ref=e1563]: "11"
+                  - cell "专必" [ref=e1564]:
+                    - generic [ref=e1565]: 专必
+                  - cell "软件工程实训（初级）" [ref=e1566]:
+                    - generic [ref=e1567] [cursor=pointer]: 软件工程实训（初级）
+                  - cell "王乐球" [ref=e1568]
+                  - cell "2025-2026" [ref=e1569]
+                  - cell "第一学期" [ref=e1570]
+                  - cell "2" [ref=e1571]
+                  - cell "91.9" [ref=e1572]
+                  - cell "92" [ref=e1573]:
+                    - generic [ref=e1574]: "92"
+                  - cell [ref=e1575]
+                  - cell "4.2" [ref=e1576]
+                  - cell "期末成绩" [ref=e1577]
+                  - cell "是" [ref=e1578]
+                  - cell "9/101" [ref=e1579]
+                - row "12 专必 软件工程导论 毛明志,陈建国 2025-2026 第一学期 2 74.6 75 2.5 期末成绩 是 101/104" [ref=e1580]:
+                  - cell "12" [ref=e1581]: "12"
+                  - cell "专必" [ref=e1582]:
+                    - generic [ref=e1583]: 专必
+                  - cell "软件工程导论" [ref=e1584]:
+                    - generic [ref=e1585] [cursor=pointer]: 软件工程导论
+                  - cell "毛明志,陈建国" [ref=e1586]
+                  - cell "2025-2026" [ref=e1587]
+                  - cell "第一学期" [ref=e1588]
+                  - cell "2" [ref=e1589]
+                  - cell "74.6" [ref=e1590]
+                  - cell "75" [ref=e1591]:
+                    - generic [ref=e1592]: "75"
+                  - cell [ref=e1593]
+                  - cell "2.5" [ref=e1594]
+                  - cell "期末成绩" [ref=e1595]
+                  - cell "是" [ref=e1596]
+                  - cell "101/104" [ref=e1597]
+                - row "13 专必 离散数学基础 何笑雨 2025-2026 第一学期 4 89.6 90 4 期末成绩 是 28/107" [ref=e1598]:
+                  - cell "13" [ref=e1599]: "13"
+                  - cell "专必" [ref=e1600]:
+                    - generic [ref=e1601]: 专必
+                  - cell "离散数学基础" [ref=e1602]:
+                    - generic [ref=e1603] [cursor=pointer]: 离散数学基础
+                  - cell "何笑雨" [ref=e1604]
+                  - cell "2025-2026" [ref=e1605]
+                  - cell "第一学期" [ref=e1606]
+                  - cell "4" [ref=e1607]
+                  - cell "89.6" [ref=e1608]
+                  - cell "90" [ref=e1609]:
+                    - generic [ref=e1610]: "90"
+                  - cell [ref=e1611]
+                  - cell "4" [ref=e1612]
+                  - cell "期末成绩" [ref=e1613]
+                  - cell "是" [ref=e1614]
+                  - cell "28/107" [ref=e1615]
+                - row "14 专必 计算机组成原理 吴炜滨 2025-2026 第一学期 3 84.7 85 3.5 期末成绩 是 72/101" [ref=e1616]:
+                  - cell "14" [ref=e1617]: "14"
+                  - cell "专必" [ref=e1618]:
+                    - generic [ref=e1619]: 专必
+                  - cell "计算机组成原理" [ref=e1620]:
+                    - generic [ref=e1621] [cursor=pointer]: 计算机组成原理
+                  - cell "吴炜滨" [ref=e1622]
+                  - cell "2025-2026" [ref=e1623]
+                  - cell "第一学期" [ref=e1624]
+                  - cell "3" [ref=e1625]
+                  - cell "84.7" [ref=e1626]
+                  - cell "85" [ref=e1627]:
+                    - generic [ref=e1628]: "85"
+                  - cell [ref=e1629]
+                  - cell "3.5" [ref=e1630]
+                  - cell "期末成绩" [ref=e1631]
+                  - cell "是" [ref=e1632]
+                  - cell "72/101" [ref=e1633]
+                - row "15 专选 人工智能与大模型（I） 廖国成 2025-2026 第一学期 2 78.5 79 2.9 期末成绩 是 123/147" [ref=e1634]:
+                  - cell "15" [ref=e1635]: "15"
+                  - cell "专选" [ref=e1636]:
+                    - generic [ref=e1637]: 专选
+                  - cell "人工智能与大模型（I）" [ref=e1638]:
+                    - generic [ref=e1639] [cursor=pointer]: 人工智能与大模型（I）
+                  - cell "廖国成" [ref=e1640]
+                  - cell "2025-2026" [ref=e1641]
+                  - cell "第一学期" [ref=e1642]
+                  - cell "2" [ref=e1643]
+                  - cell "78.5" [ref=e1644]
+                  - cell "79" [ref=e1645]:
+                    - generic [ref=e1646]: "79"
+                  - cell [ref=e1647]
+                  - cell "2.9" [ref=e1648]
+                  - cell "期末成绩" [ref=e1649]
+                  - cell "是" [ref=e1650]
+                  - cell "123/147" [ref=e1651]
+                - row "16 专选 人工智能与大模型（I）实验 廖国成 2025-2026 第一学期 1 74.7 75 2.5 期末成绩 是 139/145" [ref=e1652]:
+                  - cell "16" [ref=e1653]: "16"
+                  - cell "专选" [ref=e1654]:
+                    - generic [ref=e1655]: 专选
+                  - cell "人工智能与大模型（I）实验" [ref=e1656]:
+                    - generic [ref=e1657] [cursor=pointer]: 人工智能与大模型（I）实验
+                  - cell "廖国成" [ref=e1658]
+                  - cell "2025-2026" [ref=e1659]
+                  - cell "第一学期" [ref=e1660]
+                  - cell "1" [ref=e1661]
+                  - cell "74.7" [ref=e1662]
+                  - cell "75" [ref=e1663]:
+                    - generic [ref=e1664]: "75"
+                  - cell [ref=e1665]
+                  - cell "2.5" [ref=e1666]
+                  - cell "期末成绩" [ref=e1667]
+                  - cell "是" [ref=e1668]
+                  - cell "139/145" [ref=e1669]
+                - row "17 专选 商业计划书撰写与项目策划 任荣伟 2025-2026 第一学期 2 87.6 88 3.8 期末成绩 是 13/23" [ref=e1670]:
+                  - cell "17" [ref=e1671]: "17"
+                  - cell "专选" [ref=e1672]:
+                    - generic [ref=e1673]: 专选
+                  - cell "商业计划书撰写与项目策划" [ref=e1674]:
+                    - generic [ref=e1675] [cursor=pointer]: 商业计划书撰写与项目策划
+                  - cell "任荣伟" [ref=e1676]
+                  - cell "2025-2026" [ref=e1677]
+                  - cell "第一学期" [ref=e1678]
+                  - cell "2" [ref=e1679]
+                  - cell "87.6" [ref=e1680]
+                  - cell "88" [ref=e1681]:
+                    - generic [ref=e1682]: "88"
+                  - cell [ref=e1683]
+                  - cell "3.8" [ref=e1684]
+                  - cell "期末成绩" [ref=e1685]
+                  - cell "是" [ref=e1686]
+                  - cell "13/23" [ref=e1687]
+                - row "18 公选 数学建模实践 关彦辉 2025-2026 第一学期 2 88 88 3.8 期末成绩 是 520/897" [ref=e1688]:
+                  - cell "18" [ref=e1689]: "18"
+                  - cell "公选" [ref=e1690]:
+                    - generic [ref=e1691]: 公选
+                  - cell "数学建模实践" [ref=e1692]:
+                    - generic [ref=e1693] [cursor=pointer]: 数学建模实践
+                  - cell "关彦辉" [ref=e1694]
+                  - cell "2025-2026" [ref=e1695]
+                  - cell "第一学期" [ref=e1696]
+                  - cell "2" [ref=e1697]
+                  - cell "88" [ref=e1698]
+                  - cell "88" [ref=e1699]:
+                    - generic [ref=e1700]: "88"
+                  - cell [ref=e1701]
+                  - cell "3.8" [ref=e1702]
+                  - cell "期末成绩" [ref=e1703]
+                  - cell "是" [ref=e1704]
+                  - cell "520/897" [ref=e1705]
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - heading "排名总览 注：必修、专选平均绩点|排名/总人数为定点更新（更新时间为每个奇数整点）" [level=3] [ref=e157]
+              - table [ref=e161]:
+                - rowgroup [ref=e162]:
+                  - row "课程类别 2024-2025 学年 第二学期 完成情况 全部完成情况" [ref=e1374]:
+                    - columnheader "课程类别" [ref=e164]
+                    - columnheader "2024-2025 学年 第二学期 完成情况" [ref=e1375]
+                    - columnheader "全部完成情况" [ref=e166]
+                  - row "已修学分 已获学分 平均学分绩点 已修学分 已获学分 平均学分绩点" [ref=e167]:
+                    - columnheader "已修学分" [ref=e168]
+                    - columnheader "已获学分" [ref=e169]
+                    - columnheader "平均学分绩点" [ref=e170]
+                    - columnheader "已修学分" [ref=e171]
+                    - columnheader "已获学分" [ref=e172]
+                    - columnheader "平均学分绩点" [ref=e173]
+                - rowgroup [ref=e174]:
+                  - row "公必 3.5 3.5 3.8857 29.5 29.5 3.8982" [ref=e622]:
+                    - cell "公必" [ref=e176]
+                    - cell "3.5" [ref=e623]
+                    - cell "3.5" [ref=e624]
+                    - cell "3.8857" [ref=e625]
+                    - cell "29.5" [ref=e626]
+                    - cell "29.5" [ref=e627]
+                    - cell "3.8982" [ref=e628]
+                  - row "专必 29.0 29.0 3.9828 36.0 36.0 3.9333" [ref=e629]:
+                    - cell "专必" [ref=e184]
+                    - cell "29.0" [ref=e630]
+                    - cell "29.0" [ref=e631]
+                    - cell "3.9828" [ref=e632]
+                    - cell "36.0" [ref=e633]
+                    - cell "36.0" [ref=e634]
+                    - cell "3.9333" [ref=e635]
+                  - row "公选 2.0 2.0 3.8000 8.0 8.0 3.9000" [ref=e636]:
+                    - cell "公选" [ref=e192]
+                    - cell "2.0" [ref=e637]
+                    - cell "2.0" [ref=e638]
+                    - cell "3.8000" [ref=e639]
+                    - cell "8.0" [ref=e640]
+                    - cell "8.0" [ref=e641]
+                    - cell "3.9000" [ref=e642]
+                  - row "专选 5.0 5.0 3.1800 5.0 5.0 3.1800" [ref=e643]:
+                    - cell "专选" [ref=e200]
+                    - cell "5.0" [ref=e644]
+                    - cell "5.0" [ref=e645]
+                    - cell "3.1800" [ref=e646]
+                    - cell "5.0" [ref=e647]
+                    - cell "5.0" [ref=e648]
+                    - cell "3.1800" [ref=e649]
+                  - row "合计 39.5 39.5 3.8633 78.5 78.5 3.8680" [ref=e650]:
+                    - cell "合计" [ref=e208]
+                    - cell "39.5" [ref=e651]
+                    - cell "39.5" [ref=e652]
+                    - cell "3.8633" [ref=e653]
+                    - cell "78.5" [ref=e654]
+                    - cell "78.5" [ref=e655]
+                    - cell "3.8680" [ref=e656]
+                  - row "必修、专选平均绩点|排名/总人数 3.8667 79/221 3.8642 35/221" [ref=e657]:
+                    - cell "必修、专选平均绩点|排名/总人数" [ref=e216]
+                    - cell "3.8667" [ref=e658]
+                    - cell "79/221" [ref=e659]
+                    - cell "3.8642" [ref=e660]
+                    - cell "35/221" [ref=e661]
+                  - row "荣誉课程 0.0 0.0 0.0000 0.0 0.0 0.0000" [ref=e662]:
+                    - cell "荣誉课程" [ref=e222]
+                    - cell "0.0" [ref=e663]
+                    - cell "0.0" [ref=e664]
+                    - cell "0.0000" [ref=e665]
+                    - cell "0.0" [ref=e666]
+                    - cell "0.0" [ref=e667]
+                    - cell "0.0000" [ref=e668]
+            - generic [ref=e229]:
+              - heading "学分总览" [level=3] [ref=e230]
+              - list [ref=e232]:
+                - listitem [ref=e233]:
+                  - generic [ref=e234]: 类别
+                  - generic [ref=e235]: 平均学分绩点
+                  - generic [ref=e236]: 应修学分
+                  - generic [ref=e237]: 已修学分
+                  - generic [ref=e238]: 已获学分
+                  - generic [ref=e239]: 未获学分
+                  - generic [ref=e240]: 完成度
+                - listitem [ref=e241]:
+                  - generic [ref=e242]: 公必
+                  - generic [ref=e669]: "3.8982"
+                  - generic [ref=e670]: "39.0"
+                  - generic [ref=e671]: "29.5"
+                  - generic [ref=e672]: "29.5"
+                  - generic [ref=e674] [cursor=pointer]: "-9.5"
+                - listitem [ref=e247]:
+                  - generic [ref=e248]: 专必
+                  - generic [ref=e676]: "3.9333"
+                  - generic [ref=e677]: "88.0"
+                  - generic [ref=e678]: "36.0"
+                  - generic [ref=e679]: "36.0"
+                  - generic [ref=e681] [cursor=pointer]: "-52.0"
+                - listitem [ref=e253]:
+                  - generic [ref=e254]: 公选
+                  - generic [ref=e683]: "3.9000"
+                  - generic [ref=e684]: "8.0"
+                  - generic [ref=e685]: "8.0"
+                  - generic [ref=e686]: "8.0"
+                  - generic [ref=e688] [cursor=pointer]: "0"
+                - listitem [ref=e259]:
+                  - generic [ref=e260]: 专选
+                  - generic [ref=e690]: "3.1800"
+                  - generic [ref=e691]: "24.0"
+                  - generic [ref=e692]: "5.0"
+                  - generic [ref=e693]: "5.0"
+                  - generic [ref=e695] [cursor=pointer]: "-19.0"
+                - listitem [ref=e265]:
+                  - generic [ref=e266]: 总览
+                  - generic [ref=e697]: "3.8680"
+                  - generic [ref=e698]: "159.0"
+                  - generic [ref=e699]: "78.5"
+                  - generic [ref=e700]: "78.5"
+                  - generic [ref=e702] [cursor=pointer]: "-80.5"
+                - listitem [ref=e271]:
+                  - generic [ref=e272]: 荣誉课程
+                  - generic [ref=e704]: "0.0000"
+                  - generic [ref=e705]: "0.0"
+                  - generic [ref=e706]: "0.0"
+                  - generic [ref=e707]: "0.0"
+                  - generic [ref=e709] [cursor=pointer]: "0"
+            - generic [ref=e277]:
+              - heading "成绩分布与绩点换算" [level=3] [ref=e278]
+              - generic [ref=e279]:
+                - text: GPA（平均学分绩点）：
+                - button "3.8680" [ref=e710] [cursor=pointer]
+              - generic [ref=e282]:
+                - button "饼 图" [ref=e283] [cursor=pointer]
+                - button "条状图" [ref=e284] [cursor=pointer]
+      - generic [ref=e288]:
+        - generic [ref=e289]: 本系统为互联网非涉密系统，严禁处理与传输国家秘密
+        - generic [ref=e290]: COPYRIGHT © 2017-2021 SUN YAT-SEN UNIVERSITY
+  - dialog [ref=e1713]:
+    - document [ref=e1714]:
+      - generic [ref=e1715]:
+        - text: 
+        - generic [ref=e1717]:
+          - generic [ref=e1718]:
+            - generic [ref=e1719]: 
+            - text: 温馨提示
+            - generic [ref=e1720]: 登录过期，请重新登录！
+          - button "确 定" [ref=e1722] [cursor=pointer]
+      - generic: sentinel
+  - dialog [ref=e1724]:
+    - document [ref=e1725]:
+      - generic [ref=e1726]:
+        - text: 
+        - generic [ref=e1728]:
+          - generic [ref=e1729]:
+            - generic [ref=e1730]: 
+            - generic [ref=e1731]: "/achievement-manage/score-check/list : 用户未登录"
+          - button "知道了" [ref=e1733] [cursor=pointer]
+      - generic: sentinel
+  - dialog [ref=e1735]:
+    - document [ref=e1736]:
+      - generic [ref=e1737]:
+        - text: 
+        - generic [ref=e1739]:
+          - generic [ref=e1740]:
+            - generic [ref=e1741]: 
+            - text: 温馨提示
+            - generic [ref=e1742]: 登录过期，请重新登录！
+          - button "确 定" [ref=e1744] [cursor=pointer]
+      - generic: sentinel
+  - dialog [ref=e1746]:
+    - document [ref=e1747]:
+      - generic [ref=e1748]:
+        - text: 
+        - generic [ref=e1750]:
+          - generic [ref=e1751]:
+            - generic [ref=e1752]: 
+            - generic [ref=e1753]: "/achievement-manage/score-check/getSortByYear : 用户未登录"
+          - button "知道了" [active] [ref=e1755] [cursor=pointer]
+      - generic: sentinel

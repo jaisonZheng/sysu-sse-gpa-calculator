@@ -1,0 +1,218 @@
+- generic [ref=e4]:
+  - list [ref=e8]:
+    - listitem [ref=e9] [cursor=pointer]:
+      - img [ref=e10]
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: 郑则燊
+        - paragraph [ref=e13]: (24344151)
+    - listitem [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]:
+          - img [ref=e17]
+        - paragraph [ref=e18]: 首页
+    - listitem [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]:
+          - img [ref=e22]
+        - paragraph [ref=e23]: 语言
+    - listitem [ref=e24] [cursor=pointer]:
+      - generic [ref=e25]:
+        - paragraph [ref=e26]:
+          - img [ref=e27]
+        - paragraph [ref=e28]: 帮助
+    - listitem [ref=e29] [cursor=pointer]:
+      - generic [ref=e30]:
+        - paragraph [ref=e31]:
+          - img [ref=e32]
+        - paragraph [ref=e33]: 消息
+    - listitem [ref=e34] [cursor=pointer]:
+      - generic [ref=e35]:
+        - paragraph [ref=e36]:
+          - img [ref=e37]
+        - paragraph [ref=e38]: 退出
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e45]: 当前位置：首页
+          - text: /
+        - generic [ref=e47]: 我的成绩
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "使用提示：" [level=3] [ref=e52]
+          - paragraph [ref=e53]:
+            - text: 1. 学年不选，学期不选，即可查询所有科目的成绩。
+            - text: 2. 在成绩查询结果表格，点击课程名称，可将该课程置灰，表格顶部总学分及总绩点实时变动，实现自定义计算绩点功能(比如置灰所有公选科目)。
+            - text: 3. 在成绩查询结果表格，点击 该科目的成绩，即可查询该科目的具体分项成绩，比如平时分+期末分，以及具体权值。
+            - text: 4. 课程成绩由教师录入、各开课单位审核后公布。各开课单位教务秘书联系方式查询网址：
+            - link "https://jwb.sysu.edu.cn/lx/school" [ref=e54] [cursor=pointer]:
+              - /url: https://jwb.sysu.edu.cn/lx/school
+        - generic [ref=e55]:
+          - heading "成绩查询" [level=3] [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - emphasis [ref=e60]: "*"
+                - text: "培养类别:"
+              - combobox [ref=e62] [cursor=pointer]:
+                - generic ",主修" [ref=e64]: 主修
+                - generic [ref=e65]: 
+            - generic [ref=e66]:
+              - generic [ref=e67]: "学年:"
+              - combobox [ref=e69] [cursor=pointer]:
+                - generic [ref=e71]: 
+                - generic [ref=e72]: 
+            - generic [ref=e73]:
+              - generic [ref=e74]: "学期:"
+              - combobox [ref=e76] [cursor=pointer]:
+                - generic ",第一学期" [ref=e78]: 第一学期
+                - generic [ref=e79]: 
+                - generic [ref=e80]: 
+            - generic [ref=e81]:
+              - button "查 询" [ref=e82] [cursor=pointer]
+              - button "我的成绩单" [ref=e83] [cursor=pointer]
+          - generic [ref=e84]:
+            - generic [ref=e85]: 已修学分：0.0 分
+            - generic [ref=e86]: 已获学分：0.0 分
+            - generic [ref=e87]: 平均学分绩点：0.0000
+            - generic [ref=e88] [cursor=pointer]:
+              - checkbox "公必" [checked] [ref=e90]
+              - text: 公必
+            - generic [ref=e92] [cursor=pointer]:
+              - checkbox "专必" [checked] [ref=e94]
+              - text: 专必
+            - generic [ref=e96] [cursor=pointer]:
+              - checkbox "公选" [checked] [ref=e98]
+              - text: 公选
+            - generic [ref=e100] [cursor=pointer]:
+              - checkbox "专选" [checked] [ref=e102]
+              - text: 专选
+            - generic [ref=e104] [cursor=pointer]:
+              - checkbox "荣誉课程" [ref=e106]
+              - text: 荣誉课程
+          - generic [ref=e114]:
+            - table [ref=e116]:
+              - rowgroup [ref=e131]:
+                - row "序号 类别 课程 教师 学年 学期 学分 最终成绩 特殊原因 绩点 考试性质 是否通过 教学班排名" [ref=e132]:
+                  - columnheader "序号" [ref=e133]
+                  - columnheader "类别" [ref=e134]
+                  - columnheader "课程" [ref=e135]
+                  - columnheader "教师" [ref=e136]
+                  - columnheader "学年" [ref=e137]
+                  - columnheader "学期" [ref=e138]
+                  - columnheader "学分" [ref=e139]
+                  - columnheader "最终成绩" [ref=e140]
+                  - columnheader "特殊原因" [ref=e141]
+                  - columnheader "绩点" [ref=e142]
+                  - columnheader "考试性质" [ref=e143]
+                  - columnheader "是否通过" [ref=e144]
+                  - columnheader "教学班排名" [ref=e145]
+              - rowgroup
+            - generic [ref=e146]: 暂无数据
+        - generic [ref=e147]:
+          - generic [ref=e154]: Loading...
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - heading "排名总览 注：必修、专选平均绩点|排名/总人数为定点更新（更新时间为每个奇数整点）" [level=3] [ref=e157]
+              - table [ref=e161]:
+                - rowgroup [ref=e162]:
+                  - row "课程类别 全部 第一学期 完成情况 全部完成情况" [ref=e163]:
+                    - columnheader "课程类别" [ref=e164]
+                    - columnheader "全部 第一学期 完成情况" [ref=e165]
+                    - columnheader "全部完成情况" [ref=e166]
+                  - row "已修学分 已获学分 平均学分绩点 已修学分 已获学分 平均学分绩点" [ref=e167]:
+                    - columnheader "已修学分" [ref=e168]
+                    - columnheader "已获学分" [ref=e169]
+                    - columnheader "平均学分绩点" [ref=e170]
+                    - columnheader "已修学分" [ref=e171]
+                    - columnheader "已获学分" [ref=e172]
+                    - columnheader "平均学分绩点" [ref=e173]
+                - rowgroup [ref=e174]:
+                  - row "公必" [ref=e175]:
+                    - cell "公必" [ref=e176]
+                    - cell [ref=e177]
+                    - cell [ref=e178]
+                    - cell [ref=e179]
+                    - cell [ref=e180]
+                    - cell [ref=e181]
+                    - cell [ref=e182]
+                  - row "专必" [ref=e183]:
+                    - cell "专必" [ref=e184]
+                    - cell [ref=e185]
+                    - cell [ref=e186]
+                    - cell [ref=e187]
+                    - cell [ref=e188]
+                    - cell [ref=e189]
+                    - cell [ref=e190]
+                  - row "公选" [ref=e191]:
+                    - cell "公选" [ref=e192]
+                    - cell [ref=e193]
+                    - cell [ref=e194]
+                    - cell [ref=e195]
+                    - cell [ref=e196]
+                    - cell [ref=e197]
+                    - cell [ref=e198]
+                  - row "专选" [ref=e199]:
+                    - cell "专选" [ref=e200]
+                    - cell [ref=e201]
+                    - cell [ref=e202]
+                    - cell [ref=e203]
+                    - cell [ref=e204]
+                    - cell [ref=e205]
+                    - cell [ref=e206]
+                  - row "合计" [ref=e207]:
+                    - cell "合计" [ref=e208]
+                    - cell [ref=e209]
+                    - cell [ref=e210]
+                    - cell [ref=e211]
+                    - cell [ref=e212]
+                    - cell [ref=e213]
+                    - cell [ref=e214]
+                  - row "必修、专选平均绩点|排名/总人数" [ref=e215]:
+                    - cell "必修、专选平均绩点|排名/总人数" [ref=e216]
+                    - cell [ref=e217]
+                    - cell [ref=e218]
+                    - cell [ref=e219]
+                    - cell [ref=e220]
+                  - row "荣誉课程" [ref=e221]:
+                    - cell "荣誉课程" [ref=e222]
+                    - cell [ref=e223]
+                    - cell [ref=e224]
+                    - cell [ref=e225]
+                    - cell [ref=e226]
+                    - cell [ref=e227]
+                    - cell [ref=e228]
+            - generic [ref=e229]:
+              - heading "学分总览" [level=3] [ref=e230]
+              - list [ref=e232]:
+                - listitem [ref=e233]:
+                  - generic [ref=e234]: 类别
+                  - generic [ref=e235]: 平均学分绩点
+                  - generic [ref=e236]: 应修学分
+                  - generic [ref=e237]: 已修学分
+                  - generic [ref=e238]: 已获学分
+                  - generic [ref=e239]: 未获学分
+                  - generic [ref=e240]: 完成度
+                - listitem [ref=e241]:
+                  - generic [ref=e242]: 公必
+                - listitem [ref=e247]:
+                  - generic [ref=e248]: 专必
+                - listitem [ref=e253]:
+                  - generic [ref=e254]: 公选
+                - listitem [ref=e259]:
+                  - generic [ref=e260]: 专选
+                - listitem [ref=e265]:
+                  - generic [ref=e266]: 总览
+                - listitem [ref=e271]:
+                  - generic [ref=e272]: 荣誉课程
+            - generic [ref=e277]:
+              - heading "成绩分布与绩点换算" [level=3] [ref=e278]
+              - generic [ref=e279]:
+                - text: GPA（平均学分绩点）：
+                - button [ref=e280] [cursor=pointer]
+              - generic [ref=e282]:
+                - button "饼 图" [ref=e283] [cursor=pointer]
+                - button "条状图" [ref=e284] [cursor=pointer]
+    - generic [ref=e288]:
+      - generic [ref=e289]: 本系统为互联网非涉密系统，严禁处理与传输国家秘密
+      - generic [ref=e290]: COPYRIGHT © 2017-2021 SUN YAT-SEN UNIVERSITY

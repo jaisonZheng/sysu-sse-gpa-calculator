@@ -1,0 +1,35 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - heading "中山大学保研绩点计算器" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 支持手动输入和自动爬取两种模式，精准计算保研绩点
+  - alert [ref=e8]:
+    - img [ref=e9]
+    - heading "计算规则说明" [level=5] [ref=e11]
+    - generic [ref=e12]: 综合成绩绩点 = 所有公共必修课和一年级专业必修课的平均绩点 × 0.5 + 二年级和三年级专业必修课的平均绩点 × 0.5
+  - generic [ref=e13]:
+    - tablist [ref=e14]:
+      - tab "手动模式" [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+        - text: 手动模式
+      - tab "自动爬取模式" [selected] [ref=e18] [cursor=pointer]:
+        - img [ref=e19]
+        - text: 自动爬取模式
+    - tabpanel "自动爬取模式" [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - heading "自动爬取成绩" [level=3] [ref=e46]
+          - paragraph [ref=e47]: 使用 netid 登录教务系统，自动爬取并计算保研绩点
+        - generic [ref=e49]:
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - heading "已登录" [level=3] [ref=e77]
+              - paragraph [ref=e78]: "学号: zhengzsh5"
+            - button "退出登录" [ref=e79] [cursor=pointer]:
+              - img [ref=e80]
+              - text: 退出登录
+          - generic [ref=e83]:
+            - img [ref=e84]
+            - paragraph [ref=e86]: 正在爬取成绩数据，请稍候...
+  - generic [ref=e40]:
+    - paragraph [ref=e41]: © 2025 中山大学保研绩点计算器 | 数据仅供参考，请以官方公布为准
+    - paragraph [ref=e42]: 隐私说明：自动模式下密码仅用于登录，不会被存储
