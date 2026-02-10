@@ -1,0 +1,583 @@
+{
+  "public_required": [
+    {
+      "courseName": "大学外语",
+      "credits": 2,
+      "academicYear": 1
+    },
+    {
+      "courseName": "中国近现代史纲要 Contemporary History of China",
+      "credits": 3,
+      "academicYear": 1
+    },
+    {
+      "courseName": "习近平新时代中国特色社会主义思想概论 The Introduction of Xi Jin Ping’s Thought on Socialism with Chinese Characteristics for a New Era",
+      "credits": 3,
+      "academicYear": 1
+    },
+    {
+      "courseName": "体育 Physical Education",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "军事课 Military Course",
+      "credits": 4,
+      "academicYear": 1
+    },
+    {
+      "courseName": "心理健康教育 Mental Health Education",
+      "credits": 2,
+      "academicYear": 1
+    },
+    {
+      "courseName": "形势与政策 Current Situation and Policy",
+      "credits": 3,
+      "academicYear": 1
+    },
+    {
+      "courseName": "劳动教育 Labor Education",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "国家安全教育 National Security Education",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "大学外语",
+      "credits": 2,
+      "academicYear": 1
+    },
+    {
+      "courseName": "四史",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "思想道德与法治 Ideological Morality and Rule of Law",
+      "credits": 3,
+      "academicYear": 1
+    },
+    {
+      "courseName": "体育 Physical Education",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "大学外语",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "毛泽东思想和中国特色社会主义理论体系概论 Introduction to Mao Zedong Thought and the Theoretical System of Socialism with Chinese Characteristics",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "体育 Physical Education",
+      "credits": 0.5,
+      "academicYear": 2
+    },
+    {
+      "courseName": "大学外语",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "马克思主义基本原理 The Principles of Marxism",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "体育 Physical Education",
+      "credits": 0.5,
+      "academicYear": 2
+    },
+    {
+      "courseName": "体育 Physical education",
+      "credits": 0.5,
+      "academicYear": 3
+    },
+    {
+      "courseName": "体育 Physical Education",
+      "credits": 0.5,
+      "academicYear": 3
+    }
+  ],
+  "major_required": [
+    {
+      "courseName": "科研训练 Research Training",
+      "credits": 4,
+      "academicYear": 3
+    },
+    {
+      "courseName": "毕业设计",
+      "credits": 6,
+      "academicYear": 4
+    },
+    {
+      "courseName": "软件工程新生研讨课 New Student Seminar on Software Engineering",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "数据结构与算法 Data Structures and Algorithms",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "数据结构与算法实验 Data Structures and Algorithms Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "计算机组成原理实验 Principles of Computer Organization Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "软件工程实训",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "软件工程导论 Introduction to Software Engineering",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "离散数学基础 Discrete Mathematics",
+      "credits": 4,
+      "academicYear": 2
+    },
+    {
+      "courseName": "计算机组成原理 Principles of Computer Organization",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "操作系统原理 Principles of Operating Systems",
+      "credits": 4,
+      "academicYear": 2
+    },
+    {
+      "courseName": "操作系统原理实验 Operating Systems Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "计算机网络 Computer Networks",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "计算机网络实验 Computer Networks Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "编译器构造实验 Compilers Construction Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "编译原理 Principles of Compilers",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "软件质量保证 Software Quality Assurance",
+      "credits": 2,
+      "academicYear": 4
+    },
+    {
+      "courseName": "软件需求分析与设计 Software Analysis and Design",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "软件需求分析与设计实验 Software Analysis and Design Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "数据库系统原理 Principles of Database Systems",
+      "credits": 3,
+      "academicYear": 3
+    },
+    {
+      "courseName": "软件测试 Software Testing",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "数据库系统实验 Database Systems Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "软件测试实验 Software Testing Experiment",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "软件工程实训",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "程序分析实验 Program Analysis Practice",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "程序分析 Program Analysis",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "软件工程实训",
+      "credits": 4,
+      "academicYear": 3
+    },
+    {
+      "courseName": "线性代数 Linear Algebra",
+      "credits": 3,
+      "academicYear": 1
+    },
+    {
+      "courseName": "高等数学一",
+      "credits": 5,
+      "academicYear": 1
+    },
+    {
+      "courseName": "程序设计Ⅰ Computer Programming Ⅰ",
+      "credits": 3,
+      "academicYear": 1
+    },
+    {
+      "courseName": "程序设计Ⅰ实验 Computer Programming Ⅰ Laboratory",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "高等数学一",
+      "credits": 5,
+      "academicYear": 1
+    },
+    {
+      "courseName": "大学物理",
+      "credits": 4,
+      "academicYear": 1
+    },
+    {
+      "courseName": "程序设计Ⅱ Computer Programming Ⅱ",
+      "credits": 2,
+      "academicYear": 1
+    },
+    {
+      "courseName": "程序设计Ⅱ实验 Computer Programming Ⅱ Laboratory",
+      "credits": 1,
+      "academicYear": 1
+    },
+    {
+      "courseName": "概率统计 Probability and Statistics",
+      "credits": 3,
+      "academicYear": 1
+    },
+    {
+      "courseName": "操作系统原理实验 Operating Systems Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "计算机网络 Computer Networks",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "计算机网络实验 Computer Networks Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "编译器构造实验 Compilers Construction Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "编译原理 Principles of Compilers",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "程序分析 Program Analysis",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "高级数据挖掘及实践 Advanced Data Mining and Practice",
+      "credits": 4,
+      "academicYear": 4
+    },
+    {
+      "courseName": "软件安全 Software Security",
+      "credits": 2,
+      "academicYear": 4
+    },
+    {
+      "courseName": "高等工程数学 Advanced Engineering Mathematics",
+      "credits": 3,
+      "academicYear": 4
+    },
+    {
+      "courseName": "算法设计与分析 Algorithm Design and Analysis",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "算法设计与分析实验 Algorithm Design and Analysis Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    }
+  ],
+  "major_elective": [
+    {
+      "courseName": "高级数据挖掘及实践 Advanced Data Mining and Practice",
+      "credits": 4,
+      "academicYear": 4
+    },
+    {
+      "courseName": "软件安全 Software Security",
+      "credits": 2,
+      "academicYear": 4
+    },
+    {
+      "courseName": "高等工程数学 Advanced Engineering Mathematics",
+      "credits": 3,
+      "academicYear": 4
+    },
+    {
+      "courseName": "图论及其应用 Graph Theory and its Applications",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "数值计算方法 Numerical Methods",
+      "credits": 3,
+      "academicYear": 2
+    },
+    {
+      "courseName": "算法设计与分析 Algorithm Design and Analysis",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "算法设计与分析实验 Algorithm Design and Analysis Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "并行计算与分布式系统 Parallel Computing and Distributed Systems",
+      "credits": 3,
+      "academicYear": 3
+    },
+    {
+      "courseName": "云计算技术 Cloud Computing Technology",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "云计算技术实验 Cloud Computing Technology Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "计算机图形学 Computer Graphics",
+      "credits": 3,
+      "academicYear": 3
+    },
+    {
+      "courseName": "数字图像处理 Digital Image Processing",
+      "credits": 3,
+      "academicYear": 3
+    },
+    {
+      "courseName": "3D游戏编程与设计 3D Computer Game Programming",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "3D游戏编程与设计实验 3D Computer Game Programming Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "人工智能与大模型",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "人工智能与大模型",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "人工智能与大模型",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "人工智能与大模型",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "商业计划书撰写与项目策划 Business Plan Writing and Project Planning",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "科创金融 Technology and Innovation Finance",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "创新创业实践 Innovation and Entrepreneurship Practice",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "创新创业管理与方法 Management and Methods of Innovation and Entrepreneurship",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "战略创业 Strategic Entrepreneurship",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "领导力 Leadership",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "工业软件导论 Introduction to Industrial Software",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "工业互联网导论 Introduction to Industrial Internet",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "高级数据库技术 Advanced Topics in Database",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "高级数据库技术实验 Advanced Topics in Database Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "Java 与面向对象设计 Java and Object-Oriented Design",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": ".NET体系结构与应用开发 .NET Architecture and Application Development",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "Java 与面向对象设计实验 Java and Object-Oriented Design Laboratory",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": ".NET体系结构与应用开发实验 .NET Architecture and Application Development Practice",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "Rust语言与内存安全设计实验 Rust Language and Memory Security Design Practice",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "Rust语言与内存安全设计 Rust Language and Memory Security Design",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "工作流技术与服务计算 Workflow Management and Service Computing",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "移动应用开发 Mobile Application Development",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "移动应用开发实验 Lab of Mobile Application Development",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "IT项目管理 IT Project Management",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "下一代Web技术编程开发 Next Generation Web Technology Programming Application",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "下一代Web技术编程开发实验 Next Generation Web Technology Programming Application Practice",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "软件前沿技术 Cutting-edge Software Technologies",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "软件前沿技术应用 Application of Cutting-edge Software Technologies",
+      "credits": 1,
+      "academicYear": 2
+    },
+    {
+      "courseName": "科技论文阅读与写作 Scientific Reading and Writing",
+      "credits": 2,
+      "academicYear": 2
+    },
+    {
+      "courseName": "区块链原理与技术 Block-chain principle and technology",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "区块链原理与技术实验 Block-chain principle and technology Laboratory",
+      "credits": 1,
+      "academicYear": 3
+    },
+    {
+      "courseName": "复杂网络科学导论 Introduction to Complex Network Science",
+      "credits": 2,
+      "academicYear": 3
+    },
+    {
+      "courseName": "软件工程理论基础 Foundation of Software Engineering",
+      "credits": 4,
+      "academicYear": 4
+    }
+  ]
+}
