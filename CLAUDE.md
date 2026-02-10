@@ -15,11 +15,22 @@
 - **密码**: `1925Asd.`
 - **用途**: 测试缓考科目和 Pass/Not Pass 科目的处理
 
-### 测试账号 2
-- **NetID**: （请询问管理员）
-- **密码**: （请询问管理员）
+### 测试账号 2（2024级软件工程）
+- **NetID**: `zhengzsh5`
+- **密码**: `Jason2024&Zzs`
+- **用途**: 测试2024-2025第二学期成绩（学术交流英语、中国近现代史纲要等）
+
+### 测试账号 3（需补充信息）
+- **NetID**: `heyj68`
+- **密码**: `Jiuli.0607`
+- **用途**: 常规测试
 
 **注意**：测试账号包含真实学生信息，请妥善保管，不要泄露给他人。
+
+### 登录注意事项
+1. 用一个账户登录后，下一次登录要先退出
+2. 在登录页面可能需要点击"切换账号"按钮才能输入新的netid
+3. CAS页面可能有已登录状态，需要先点击"切换账号"清除
 
 ---
 
@@ -241,9 +252,29 @@ SELECT * FROM user_grades WHERE status IN ('pass', 'not_pass');
 
 ---
 
-## 部署命令
+## 部署与测试说明
 
-### 本地构建
+### 重要提示
+**本项目的一切部署和测试都在服务器上进行（IP: 43.136.42.69）**，本地仅进行代码修改。
+
+### 服务器部署流程
+```bash
+# 1. 本地修改代码后，上传到服务器
+scp -i /tmp/tcloud_key backend/src/scraper/scraper.ts ubuntu@43.136.42.69:/tmp/
+ssh -i /tmp/tcloud_key ubuntu@43.136.42.69 "mv /tmp/scraper.ts ~/gpa-calculator-deploy/backend/src/scraper/"
+
+# 2. 在服务器上构建并重启
+ssh -i /tmp/tcloud_key ubuntu@43.136.42.69
+
+cd ~/gpa-calculator-deploy/backend
+npm run build
+pm2 restart gpa-backend
+
+# 3. 查看日志
+pm2 logs gpa-backend
+```
+
+### 本地构建（仅用于验证）
 ```bash
 cd frontend
 npm install
@@ -251,22 +282,6 @@ npm run build
 cd ../backend
 npm install
 npm run build
-```
-
-### 服务器部署
-```bash
-# 上传文件
-scp -r frontend/dist ubuntu@43.136.42.69:/var/www/gpa-calculator/
-scp -r backend ubuntu@43.136.42.69:~/gpa-calculator/
-
-# 服务器端操作
-ssh ubuntu@43.136.42.69
-cd ~/gpa-calculator/backend
-npm install
-npm run build
-
-# 重启服务
-pm2 restart gpa-backend
 ```
 
 ---
