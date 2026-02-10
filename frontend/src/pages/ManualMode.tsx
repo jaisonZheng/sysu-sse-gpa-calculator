@@ -7,7 +7,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Loader2, Calculator, Trash2, Plus, GraduationCap } from 'lucide-react'
 import type { ManualCalculateResponse, AcademicYear, CourseCategory } from '@/types'
-import { scoreToGpa } from '@/types'
+import { scoreToGpaManual } from '@/types'
 
 interface CourseInput {
   id: string
@@ -307,7 +307,7 @@ export default function ManualMode() {
                     </div>
                     {course.score > 0 && (
                       <div className="mt-2 text-sm text-muted-foreground">
-                        绩点: {scoreToGpa(course.score).toFixed(1)}
+                        绩点: {scoreToGpaManual(course.score).toFixed(1)}
                       </div>
                     )}
                   </CardContent>

@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import type { ManualCalculateRequest, ManualCalculateResponse, UserGrade } from '../types';
-import { scoreToGpa, calculateGpaFromGrades } from '../utils/gpa';
+import { scoreToGpaManual, calculateGpaFromGrades } from '../utils/gpa';
 import { insertUserGrade, insertGpaResult, deleteUserGradesBySession } from '../database';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -30,7 +30,7 @@ router.post('/calculate', (req, res) => {
       courseName: course.courseName,
       credits: course.credits,
       score: course.score,
-      gpa: scoreToGpa(course.score),
+      gpa: scoreToGpaManual(course.score),
       category: course.category,
       academicYear: course.academicYear,
       semester: course.semester
