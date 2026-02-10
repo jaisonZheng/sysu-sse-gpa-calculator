@@ -60,27 +60,6 @@
 - Nginx 反向代理
 - PM2 进程管理
 
-## 🏃‍♂️ 快速开始
-
-### 本地开发
-
-```bash
-# 克隆项目
-git clone https://github.com/jaisonZheng/sysu-sse-gpa-calculator.git
-cd sysu-sse-gpa-calculator
-
-# 安装后端依赖
-cd backend
-npm install
-npm run build
-npm start
-
-# 安装前端依赖（新终端）
-cd frontend
-npm install
-npm run dev
-```
-
 ## 📝 计算公式详解
 
 ### 第一步：分类
@@ -103,7 +82,7 @@ Part 2 = (大二专必绩点 × 学分 + 大三专必绩点 × 学分) / 总学�
 
 ## ⚠️ 免责声明
 
-- 本项目已获得学校授权进行数据爬取
+- 本项目已获得学校授权进行数据爬取（_其实并没有_）
 - 仅用于本校学生个人成绩计算
 - 计算结果仅供参考，最终保研资格以学校官方公布为准
 
@@ -112,3 +91,5 @@ Part 2 = (大二专必绩点 × 学分 + 大三专必绩点 × 学分) / 总学�
 > 💡 **小提示**：绩点很重要，但健康的身体和愉快的心情更重要！加油！💪
 
 **Made with ❤️ at Sun Yat-sen University**
+
+> _以上所有内容由Claude Code + Kimi 2.5生成。（除了本行哈哈哈哈哈哈）_
