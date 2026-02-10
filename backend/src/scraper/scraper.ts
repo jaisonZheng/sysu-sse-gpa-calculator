@@ -228,7 +228,8 @@ export class ScraperService {
       }
 
       // Get all semester options (first and second semester)
-      const semesterOptions = ['第一学期', '第二学期'];
+      // Note: The option text has a leading space: " 第一学期", " 第二学期"
+      const semesterOptions = [' 第一学期', ' 第二学期'];
 
       console.log(`Will fetch grades for ${yearOptions.length} academic years x 2 semesters`);
 

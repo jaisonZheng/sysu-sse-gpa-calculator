@@ -1,0 +1,494 @@
+- generic [ref=e5]:
+  - list [ref=e9]:
+    - listitem [ref=e10] [cursor=pointer]:
+      - img [ref=e11]
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: 郑则燊
+        - paragraph [ref=e14]: (24344151)
+    - listitem [ref=e15] [cursor=pointer]:
+      - generic [ref=e16]:
+        - paragraph [ref=e17]:
+          - img [ref=e18]
+        - paragraph [ref=e19]: 首页
+    - listitem [ref=e20] [cursor=pointer]:
+      - generic [ref=e21]:
+        - paragraph [ref=e22]:
+          - img [ref=e23]
+        - paragraph [ref=e24]: 语言
+    - listitem [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]:
+        - paragraph [ref=e27]:
+          - img [ref=e28]
+        - paragraph [ref=e29]: 帮助
+    - listitem [ref=e30] [cursor=pointer]:
+      - generic [ref=e31]:
+        - paragraph [ref=e32]:
+          - img [ref=e33]
+        - paragraph [ref=e34]: 消息
+    - listitem [ref=e35] [cursor=pointer]:
+      - generic [ref=e36]:
+        - paragraph [ref=e37]:
+          - img [ref=e38]
+        - paragraph [ref=e39]: 退出
+  - main [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e45]:
+          - generic [ref=e49]: 常用服务
+          - generic [ref=e53]:
+            - link " 选课" [ref=e55] [cursor=pointer]:
+              - /url: /jwxt/mk/courseSelection/?code=jwxsd_xk&resourceName=%25E9%2580%2589%25E8%25AF%25BE
+              - generic [ref=e57]: 
+              - generic "选课" [ref=e58]
+            - link " 辅修选课" [ref=e60] [cursor=pointer]:
+              - /url: /jwxt/mk/minorCourseSelection/?code=jwxsd_fxxk&resourceName=%25E8%25BE%2585%25E4%25BF%25AE%25E9%2580%2589%25E8%25AF%25BE
+              - generic [ref=e62]: 
+              - generic "辅修选课" [ref=e63]
+            - link " 我的成绩" [ref=e65] [cursor=pointer]:
+              - /url: /jwxt/mk/studentWeb/#/stuAchievementView?code=jwxsd_wdcj&resourceName=%25E6%2588%2591%25E7%259A%2584%25E6%2588%2590%25E7%25BB%25A9
+              - generic [ref=e67]: 
+              - generic "我的成绩" [ref=e68]
+            - link " 课表查询" [ref=e70] [cursor=pointer]:
+              - /url: /jwxt/mk/schedule-web/#/studentTimeTabPrint?code=jwxsd_xskbcx&resourceName=%25E8%25AF%25BE%25E8%25A1%25A8%25E6%259F%25A5%25E8%25AF%25A2
+              - generic [ref=e72]: 
+              - generic "课表查询" [ref=e73]
+            - link " 全校开课课程" [ref=e75] [cursor=pointer]:
+              - /url: /jwxt/mk/#/openingCoursesStu?code=jwxsd_qxkckk&resourceName=%25E5%2585%25A8%25E6%25A0%25A1%25E5%25BC%2580%25E8%25AF%25BE%25E8%25AF%25BE%25E7%25A8%258B
+              - generic [ref=e77]: 
+              - generic "全校开课课程" [ref=e78]
+            - link " 成绩转换申请(新)" [ref=e80] [cursor=pointer]:
+              - /url: /jwxt/mk/#/achieveConvertApplyV2?code=jwxsd_xcjzhsq&resourceName=%25E6%2588%2590%25E7%25BB%25A9%25E8%25BD%25AC%25E6%258D%25A2%25E7%2594%25B3%25E8%25AF%25B7(%25E6%2596%25B0)
+              - generic [ref=e82]: 
+              - generic "成绩转换申请(新)" [ref=e83]
+            - link " 成绩转换申请" [ref=e85] [cursor=pointer]:
+              - /url: /jwxt/mk/#/achieveConvertApply?code=jwxsd_cjzhsq&resourceName=%25E6%2588%2590%25E7%25BB%25A9%25E8%25BD%25AC%25E6%258D%25A2%25E7%2594%25B3%25E8%25AF%25B7
+              - generic [ref=e87]: 
+              - generic "成绩转换申请" [ref=e88]
+            - link " 教室上课情况及空闲教室查询" [ref=e90] [cursor=pointer]:
+              - /url: /jwxt/mk/schedule-web/#/classroomCheckStu?code=jwxsd_jsskqkjkxjscx&resourceName=%25E6%2595%2599%25E5%25AE%25A4%25E4%25B8%258A%25E8%25AF%25BE%25E6%2583%2585%25E5%2586%25B5%25E5%258F%258A%25E7%25A9%25BA%25E9%2597%25B2%25E6%2595%2599%25E5%25AE%25A4%25E6%259F%25A5%25E8%25AF%25A2
+              - generic [ref=e92]: 
+              - generic "教室上课情况及空闲教室查询" [ref=e93]
+            - generic [ref=e95] [cursor=pointer]:
+              - 'generic "图标: plus" [ref=e97]':
+                - img [ref=e98]
+              - generic [ref=e101]: 更多
+        - generic [ref=e102]:
+          - generic [ref=e104]:
+            - tablist [ref=e105]:
+              - generic [ref=e107] [cursor=pointer]:
+                - text: 更多
+                - 'generic "图标: right" [ref=e108]':
+                  - img [ref=e109]
+              - generic [ref=e111]:
+                - generic:
+                  - generic:
+                    - 'generic "图标: left"':
+                      - img
+                - generic:
+                  - generic:
+                    - 'generic "图标: right"':
+                      - img
+                - generic [ref=e115]:
+                  - tab "教务部公告" [selected] [ref=e116] [cursor=pointer]
+                  - tab "院系公告" [ref=e117] [cursor=pointer]
+                  - tab "待办事项" [ref=e118] [cursor=pointer]
+                  - tab "申请进度查询" [ref=e119] [cursor=pointer]
+            - generic [ref=e121]:
+              - tabpanel [ref=e122]:
+                - list [ref=e123]:
+                  - listitem [ref=e124]:
+                    - text: 关于选派学生赴日本早稻田大学交流学习的启事
+                    - generic [ref=e126]: 2026-02-03
+                  - listitem [ref=e127]:
+                    - text: 关于选派本科生赴日本立教大学交流学习的启事
+                    - generic [ref=e128]: 2026-02-03
+                  - listitem [ref=e129]:
+                    - text: 关于选派学生赴北海道大学交流学习的 启事
+                    - generic [ref=e130]: 2026-02-02
+                  - listitem [ref=e131]:
+                    - text: 关于选派本科生赴日本东北大学交流学习的启事
+                    - generic [ref=e132]: 2026-01-30
+              - tabpanel
+              - tabpanel
+              - tabpanel
+          - generic [ref=e133]:
+            - generic [ref=e136]:
+              - generic [ref=e140]: 学分情况
+              - generic [ref=e143]:
+                - generic [ref=e144]: （大类培养期间不显示毕业要求学分）
+                - generic [ref=e145]:
+                  - generic [ref=e146]:
+                    - generic [ref=e147]:
+                      - text: 毕业总学分
+                      - heading "159" [level=1] [ref=e148]
+                    - generic [ref=e149]:
+                      - text: 已完成毕业学分
+                      - heading "78.5" [level=1] [ref=e150]
+                  - generic [ref=e151]:
+                    - img [ref=e154]
+                    - generic [ref=e157]:
+                      - text: "49.37"
+                      - text: "%"
+                  - generic [ref=e159]:
+                    - generic [ref=e160]:
+                      - generic [ref=e161]: 公必
+                      - generic [ref=e162]:
+                        - emphasis [ref=e163]: "29.5"
+                        - text: /39
+                    - generic [ref=e170]:
+                      - generic [ref=e171]: 专必
+                      - generic [ref=e172]:
+                        - emphasis [ref=e173]: "36"
+                        - text: /88
+                    - generic [ref=e180]:
+                      - generic [ref=e181]: 公选
+                      - generic [ref=e182]:
+                        - emphasis [ref=e183]: "8"
+                        - text: /8
+                    - generic [ref=e190]:
+                      - generic [ref=e191]: 专选
+                      - generic [ref=e192]:
+                        - emphasis [ref=e193]: "5"
+                        - text: /24
+            - generic [ref=e202]:
+              - generic [ref=e204]:
+                - generic [ref=e206]: 学业预警
+                - link "详情" [ref=e209] [cursor=pointer]:
+                  - /url: /jwxt/mk/studentWeb/#/schoolWorkWarning
+              - generic [ref=e211]:
+                - list [ref=e218]:
+                  - listitem [ref=e219]:
+                    - generic [ref=e220]: 学业预警
+                    - generic [ref=e221]: 预警次数
+                  - listitem [ref=e222]:
+                    - generic [ref=e223]: Ⅰ级
+                    - generic [ref=e225]: "0"
+                  - listitem [ref=e226]:
+                    - generic [ref=e227]: Ⅱ级
+                    - generic [ref=e229]: "0"
+                  - listitem [ref=e230]:
+                    - generic [ref=e231]: Ⅲ级
+                    - generic [ref=e233]: "0"
+                  - listitem [ref=e234]:
+                    - generic [ref=e235]: Ⅳ级
+                    - generic [ref=e237]: "0"
+                  - listitem [ref=e238]:
+                    - generic [ref=e239]: Ⅴ级
+                    - generic [ref=e241]: "0"
+                - generic [ref=e242]: "注: 圈内预警等级为上学期最高预警及本学期预警等级"
+      - generic [ref=e244]:
+        - generic [ref=e248]: 我的课表
+        - generic [ref=e252]:
+          - generic [ref=e253]:
+            - tablist [ref=e254]:
+              - generic [ref=e255]:
+                - 'generic "图标: left" [ref=e258] [cursor=pointer]':
+                  - img [ref=e259]
+                - 'generic "图标: right" [ref=e263]':
+                  - img [ref=e264]
+                - generic [ref=e269]:
+                  - tab "第1周" [ref=e270] [cursor=pointer]
+                  - tab "第2周" [ref=e271] [cursor=pointer]
+                  - tab "第3周" [ref=e272] [cursor=pointer]
+                  - tab "第4周" [ref=e273] [cursor=pointer]
+                  - tab "第5周" [ref=e274] [cursor=pointer]
+                  - tab "第6周" [ref=e275] [cursor=pointer]
+                  - tab "第7周" [ref=e276] [cursor=pointer]
+                  - tab "第8周" [ref=e277] [cursor=pointer]
+                  - tab "第9周" [ref=e278] [cursor=pointer]
+                  - tab "第10周" [ref=e279] [cursor=pointer]
+                  - tab "第11周" [ref=e280] [cursor=pointer]
+                  - tab "第12周" [ref=e281] [cursor=pointer]
+                  - tab "第13周" [ref=e282] [cursor=pointer]
+                  - tab "第14周" [ref=e283] [cursor=pointer]
+                  - tab "第15周" [ref=e284] [cursor=pointer]
+                  - tab "第16周" [ref=e285] [cursor=pointer]
+                  - tab "第17周" [ref=e286] [cursor=pointer]
+                  - tab "第18周" [ref=e287] [cursor=pointer]
+                  - tab "第19周" [ref=e288] [cursor=pointer]
+                  - tab "第20周" [ref=e289] [cursor=pointer]
+                  - tab "第21周" [ref=e290] [cursor=pointer]
+                  - tab "第22周" [ref=e291] [cursor=pointer]
+                  - tab "第23周" [selected] [ref=e292] [cursor=pointer]
+                  - tab "第24周" [ref=e293] [cursor=pointer]
+                  - tab "第25周" [ref=e294] [cursor=pointer]
+            - generic:
+              - tabpanel
+          - generic [ref=e296]:
+            - heading "2025-1 学期 ,第 23 周： （2026-02-09 至 2026-02-15）" [level=1] [ref=e297]
+            - table [ref=e305]:
+              - rowgroup [ref=e315]:
+                - row "节次 一 二 三 四 五 六 日" [ref=e316]:
+                  - columnheader "节次" [ref=e317]:
+                    - generic [ref=e319]: 节次
+                  - columnheader "一" [ref=e320]:
+                    - generic [ref=e322]: 一
+                  - columnheader "二" [ref=e323]:
+                    - generic [ref=e325]: 二
+                  - columnheader "三" [ref=e326]:
+                    - generic [ref=e328]: 三
+                  - columnheader "四" [ref=e329]:
+                    - generic [ref=e331]: 四
+                  - columnheader "五" [ref=e332]:
+                    - generic [ref=e334]: 五
+                  - columnheader "六" [ref=e335]:
+                    - generic [ref=e337]: 六
+                  - columnheader "日" [ref=e338]:
+                    - generic [ref=e340]: 日
+              - rowgroup [ref=e341]:
+                - row "第1节 08:00~08:45" [ref=e342]:
+                  - cell "第1节 08:00~08:45" [ref=e343]:
+                    - generic [ref=e344]:
+                      - text: 第1节
+                      - generic [ref=e345]: 08:00~08:45
+                  - cell [ref=e346]
+                  - cell [ref=e347]
+                  - cell [ref=e348]
+                  - cell [ref=e349]
+                  - cell [ref=e350]
+                  - cell [ref=e351]
+                  - cell [ref=e352]
+                - row "第2节 08:55~09:40" [ref=e353]:
+                  - cell "第2节 08:55~09:40" [ref=e354]:
+                    - generic [ref=e355]:
+                      - text: 第2节
+                      - generic [ref=e356]: 08:55~09:40
+                  - cell [ref=e357]
+                  - cell [ref=e358]
+                  - cell [ref=e359]
+                  - cell [ref=e360]
+                  - cell [ref=e361]
+                  - cell [ref=e362]
+                  - cell [ref=e363]
+                - row "第3节 10:10~10:55" [ref=e364]:
+                  - cell "第3节 10:10~10:55" [ref=e365]:
+                    - generic [ref=e366]:
+                      - text: 第3节
+                      - generic [ref=e367]: 10:10~10:55
+                  - cell [ref=e368]
+                  - cell [ref=e369]
+                  - cell [ref=e370]
+                  - cell [ref=e371]
+                  - cell [ref=e372]
+                  - cell [ref=e373]
+                  - cell [ref=e374]
+                - row "第4节 11:05~11:50" [ref=e375]:
+                  - cell "第4节 11:05~11:50" [ref=e376]:
+                    - generic [ref=e377]:
+                      - text: 第4节
+                      - generic [ref=e378]: 11:05~11:50
+                  - cell [ref=e379]
+                  - cell [ref=e380]
+                  - cell [ref=e381]
+                  - cell [ref=e382]
+                  - cell [ref=e383]
+                  - cell [ref=e384]
+                  - cell [ref=e385]
+                - row "第5节 14:20~15:05" [ref=e386]:
+                  - cell "第5节 14:20~15:05" [ref=e387]:
+                    - generic [ref=e388]:
+                      - text: 第5节
+                      - generic [ref=e389]: 14:20~15:05
+                  - cell [ref=e390]
+                  - cell [ref=e391]
+                  - cell [ref=e392]
+                  - cell [ref=e393]
+                  - cell [ref=e394]
+                  - cell [ref=e395]
+                  - cell [ref=e396]
+                - row "第6节 15:15~16:00" [ref=e397]:
+                  - cell "第6节 15:15~16:00" [ref=e398]:
+                    - generic [ref=e399]:
+                      - text: 第6节
+                      - generic [ref=e400]: 15:15~16:00
+                  - cell [ref=e401]
+                  - cell [ref=e402]
+                  - cell [ref=e403]
+                  - cell [ref=e404]
+                  - cell [ref=e405]
+                  - cell [ref=e406]
+                  - cell [ref=e407]
+                - row "第7节 16:30~17:15" [ref=e408]:
+                  - cell "第7节 16:30~17:15" [ref=e409]:
+                    - generic [ref=e410]:
+                      - text: 第7节
+                      - generic [ref=e411]: 16:30~17:15
+                  - cell [ref=e412]
+                  - cell [ref=e413]
+                  - cell [ref=e414]
+                  - cell [ref=e415]
+                  - cell [ref=e416]
+                  - cell [ref=e417]
+                  - cell [ref=e418]
+                - row "第8节 17:25~18:10" [ref=e419]:
+                  - cell "第8节 17:25~18:10" [ref=e420]:
+                    - generic [ref=e421]:
+                      - text: 第8节
+                      - generic [ref=e422]: 17:25~18:10
+                  - cell [ref=e423]
+                  - cell [ref=e424]
+                  - cell [ref=e425]
+                  - cell [ref=e426]
+                  - cell [ref=e427]
+                  - cell [ref=e428]
+                  - cell [ref=e429]
+                - row "第9节 19:00~19:45" [ref=e430]:
+                  - cell "第9节 19:00~19:45" [ref=e431]:
+                    - generic [ref=e432]:
+                      - text: 第9节
+                      - generic [ref=e433]: 19:00~19:45
+                  - cell [ref=e434]
+                  - cell [ref=e435]
+                  - cell [ref=e436]
+                  - cell [ref=e437]
+                  - cell [ref=e438]
+                  - cell [ref=e439]
+                  - cell [ref=e440]
+                - row "第10节 19:55~20:40" [ref=e441]:
+                  - cell "第10节 19:55~20:40" [ref=e442]:
+                    - generic [ref=e443]:
+                      - text: 第10节
+                      - generic [ref=e444]: 19:55~20:40
+                  - cell [ref=e445]
+                  - cell [ref=e446]
+                  - cell [ref=e447]
+                  - cell [ref=e448]
+                  - cell [ref=e449]
+                  - cell [ref=e450]
+                  - cell [ref=e451]
+                - row "第11节 20:50~21:35" [ref=e452]:
+                  - cell "第11节 20:50~21:35" [ref=e453]:
+                    - generic [ref=e454]:
+                      - text: 第11节
+                      - generic [ref=e455]: 20:50~21:35
+                  - cell [ref=e456]
+                  - cell [ref=e457]
+                  - cell [ref=e458]
+                  - cell [ref=e459]
+                  - cell [ref=e460]
+                  - cell [ref=e461]
+                  - cell [ref=e462]
+      - generic [ref=e464]:
+        - generic [ref=e468]: 成绩分布图
+        - generic [ref=e472]:
+          - generic [ref=e474]:
+            - generic [ref=e475] [cursor=pointer]:
+              - generic:
+                - radio "饼图" [checked]
+              - text: 饼图
+            - generic [ref=e476] [cursor=pointer]:
+              - generic:
+                - radio "条形图"
+              - text: 条形图
+          - generic [ref=e480]:
+            - heading "当前学年成绩" [level=3] [ref=e481]
+            - generic [ref=e488]:
+              - table [ref=e490]:
+                - rowgroup [ref=e496]:
+                  - row "课程 学分 成绩 绩点" [ref=e497]:
+                    - columnheader "课程" [ref=e498]:
+                      - generic [ref=e500]: 课程
+                    - columnheader "学分" [ref=e501]:
+                      - generic [ref=e503]: 学分
+                    - columnheader "成绩" [ref=e504]:
+                      - generic [ref=e506]: 成绩
+                    - columnheader "绩点" [ref=e507]:
+                      - generic [ref=e509]: 绩点
+              - table [ref=e511]:
+                - rowgroup [ref=e517]:
+                  - row "毛泽东思想和中国特色社会主义理论体系概论 3 87 3.7" [ref=e518]:
+                    - cell "毛泽东思想和中国特色社会主义理论体系概论" [ref=e519]: 毛泽东思想和中国特色社会主义理论体系概论
+                    - cell "3" [ref=e520]
+                    - cell "87" [ref=e521]
+                    - cell "3.7" [ref=e522]
+                  - row "体育 0.5 100 5" [ref=e523]:
+                    - cell "体育" [ref=e524]: 体育
+                    - cell "0.5" [ref=e525]
+                    - cell "100" [ref=e526]
+                    - cell "5" [ref=e527]
+                  - row "高等数学一（I） 5 93 4.3" [ref=e528]:
+                    - cell "高等数学一（I）" [ref=e529]: 高等数学一（I）
+                    - cell "5" [ref=e530]
+                    - cell "93" [ref=e531]
+                    - cell "4.3" [ref=e532]
+                  - row "线性代数 3 98 4.8" [ref=e533]:
+                    - cell "线性代数" [ref=e534]: 线性代数
+                    - cell "3" [ref=e535]
+                    - cell "98" [ref=e536]
+                    - cell "4.8" [ref=e537]
+                  - row "程序设计Ⅰ 3 94 4.4" [ref=e538]:
+                    - cell "程序设计Ⅰ" [ref=e539]: 程序设计Ⅰ
+                    - cell "3" [ref=e540]
+                    - cell "94" [ref=e541]
+                    - cell "4.4" [ref=e542]
+                  - row "程序设计Ⅰ实验 1 94 4.4" [ref=e543]:
+                    - cell "程序设计Ⅰ实验" [ref=e544]: 程序设计Ⅰ实验
+                    - cell "1" [ref=e545]
+                    - cell "94" [ref=e546]
+                    - cell "4.4" [ref=e547]
+                  - row "软件工程新生研讨课 1 100 5" [ref=e548]:
+                    - cell "软件工程新生研讨课" [ref=e549]: 软件工程新生研讨课
+                    - cell "1" [ref=e550]
+                    - cell "100" [ref=e551]
+                    - cell "5" [ref=e552]
+                  - row "数据结构与算法 3 77 2.7" [ref=e553]:
+                    - cell "数据结构与算法" [ref=e554]: 数据结构与算法
+                    - cell "3" [ref=e555]
+                    - cell "77" [ref=e556]
+                    - cell "2.7" [ref=e557]
+                  - row "数据结构与算法实验 1 92 4.2" [ref=e558]:
+                    - cell "数据结构与算法实验" [ref=e559]: 数据结构与算法实验
+                    - cell "1" [ref=e560]
+                    - cell "92" [ref=e561]
+                    - cell "4.2" [ref=e562]
+                  - row "计算机组成原理实验 1 98 4.8" [ref=e563]:
+                    - cell "计算机组成原理实验" [ref=e564]: 计算机组成原理实验
+                    - cell "1" [ref=e565]
+                    - cell "98" [ref=e566]
+                    - cell "4.8" [ref=e567]
+                  - row "软件工程实训（初级） 2 92 4.2" [ref=e568]:
+                    - cell "软件工程实训（初级）" [ref=e569]: 软件工程实训（初级）
+                    - cell "2" [ref=e570]
+                    - cell "92" [ref=e571]
+                    - cell "4.2" [ref=e572]
+                  - row "软件工程导论 2 75 2.5" [ref=e573]:
+                    - cell "软件工程导论" [ref=e574]: 软件工程导论
+                    - cell "2" [ref=e575]
+                    - cell "75" [ref=e576]
+                    - cell "2.5" [ref=e577]
+                  - row "离散数学基础 4 90 4" [ref=e578]:
+                    - cell "离散数学基础" [ref=e579]: 离散数学基础
+                    - cell "4" [ref=e580]
+                    - cell "90" [ref=e581]
+                    - cell "4" [ref=e582]
+                  - row "计算机组成原理 3 85 3.5" [ref=e583]:
+                    - cell "计算机组成原理" [ref=e584]: 计算机组成原理
+                    - cell "3" [ref=e585]
+                    - cell "85" [ref=e586]
+                    - cell "3.5" [ref=e587]
+                  - row "人工智能与大模型（I） 2 79 2.9" [ref=e588]:
+                    - cell "人工智能与大模型（I）" [ref=e589]: 人工智能与大模型（I）
+                    - cell "2" [ref=e590]
+                    - cell "79" [ref=e591]
+                    - cell "2.9" [ref=e592]
+                  - row "人工智能与大模型（I）实验 1 75 2.5" [ref=e593]:
+                    - cell "人工智能与大模型（I）实验" [ref=e594]: 人工智能与大模型（I）实验
+                    - cell "1" [ref=e595]
+                    - cell "75" [ref=e596]
+                    - cell "2.5" [ref=e597]
+                  - row "商业计划书撰写与项目策划 2 88 3.8" [ref=e598]:
+                    - cell "商业计划书撰写与项目策划" [ref=e599]: 商业计划书撰写与项目策划
+                    - cell "2" [ref=e600]
+                    - cell "88" [ref=e601]
+                    - cell "3.8" [ref=e602]
+                  - row "数学建模实践 2 88 3.8" [ref=e603]:
+                    - cell "数学建模实践" [ref=e604]: 数学建模实践
+                    - cell "2" [ref=e605]
+                    - cell "88" [ref=e606]
+                    - cell "3.8" [ref=e607]
+      - generic [ref=e609] [cursor=pointer]:
+        - img [ref=e610]
+        - paragraph [ref=e611]: 问卷调查
+  - generic [ref=e612]:
+    - generic [ref=e613]: 本系统为互联网非涉密系统，严禁处理与传输国家秘密
+    - generic [ref=e614]: COPYRIGHT © 2017-2021 SUN YAT-SEN UNIVERSITY

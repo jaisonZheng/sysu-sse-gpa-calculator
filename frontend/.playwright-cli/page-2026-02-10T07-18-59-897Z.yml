@@ -1,0 +1,328 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - heading "中山大学保研绩点计算器" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 支持手动输入和自动爬取两种模式，精准计算保研绩点
+  - alert [ref=e8]:
+    - img [ref=e9]
+    - heading "计算规则说明" [level=5] [ref=e11]
+    - generic [ref=e12]: 综合成绩绩点 = 所有公共必修课和一年级专业必修课的平均绩点 × 0.5 + 二年级和三年级专业必修课的平均绩点 × 0.5
+  - generic [ref=e13]:
+    - tablist [ref=e14]:
+      - tab "手动模式" [selected] [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+        - text: 手动模式
+      - tab "自动爬取模式" [ref=e18] [cursor=pointer]:
+        - img [ref=e19]
+        - text: 自动爬取模式
+    - tabpanel "手动模式" [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "手动输入成绩" [level=3] [ref=e25]
+          - paragraph [ref=e26]: 手动输入各门课程的成绩，系统将自动计算保研绩点
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e43]:
+              - text: "当前选择:"
+              - generic [ref=e44]: 2023级
+            - button "重新选择年级" [ref=e45] [cursor=pointer]
+          - generic [ref=e46]:
+            - tablist [ref=e47]:
+              - tab "大一" [selected] [ref=e48] [cursor=pointer]
+              - tab "大二" [ref=e49] [cursor=pointer]
+              - tab "大三" [ref=e50] [cursor=pointer]
+            - tabpanel "大一" [ref=e51]:
+              - generic [ref=e52]:
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e57]: 大学外语（I）
+                  - generic [ref=e58]:
+                    - text: 学分
+                    - spinbutton [ref=e59]: "2"
+                  - generic [ref=e60]:
+                    - text: 类别
+                    - combobox [ref=e61]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e62]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e63]
+                  - button [ref=e65] [cursor=pointer]:
+                    - img [ref=e66]
+                - generic [ref=e71]:
+                  - generic [ref=e72]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e73]: 中国近现代史纲要
+                  - generic [ref=e74]:
+                    - text: 学分
+                    - spinbutton [ref=e75]: "3"
+                  - generic [ref=e76]:
+                    - text: 类别
+                    - combobox [ref=e77]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e78]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e79]
+                  - button [ref=e81] [cursor=pointer]:
+                    - img [ref=e82]
+                - generic [ref=e87]:
+                  - generic [ref=e88]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e89]: 体育（I）
+                  - generic [ref=e90]:
+                    - text: 学分
+                    - spinbutton [ref=e91]: "1"
+                  - generic [ref=e92]:
+                    - text: 类别
+                    - combobox [ref=e93]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e94]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e95]
+                  - button [ref=e97] [cursor=pointer]:
+                    - img [ref=e98]
+                - generic [ref=e103]:
+                  - generic [ref=e104]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e105]: 军事课
+                  - generic [ref=e106]:
+                    - text: 学分
+                    - spinbutton [ref=e107]: "4"
+                  - generic [ref=e108]:
+                    - text: 类别
+                    - combobox [ref=e109]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e110]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e111]
+                  - button [ref=e113] [cursor=pointer]:
+                    - img [ref=e114]
+                - generic [ref=e119]:
+                  - generic [ref=e120]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e121]: 思想道德与法治
+                  - generic [ref=e122]:
+                    - text: 学分
+                    - spinbutton [ref=e123]: "3"
+                  - generic [ref=e124]:
+                    - text: 类别
+                    - combobox [ref=e125]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e126]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e127]
+                  - button [ref=e129] [cursor=pointer]:
+                    - img [ref=e130]
+                - generic [ref=e135]:
+                  - generic [ref=e136]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e137]: 大学外语（II）
+                  - generic [ref=e138]:
+                    - text: 学分
+                    - spinbutton [ref=e139]: "2"
+                  - generic [ref=e140]:
+                    - text: 类别
+                    - combobox [ref=e141]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e142]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e143]
+                  - button [ref=e145] [cursor=pointer]:
+                    - img [ref=e146]
+                - generic [ref=e151]:
+                  - generic [ref=e152]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e153]: 体育（II）
+                  - generic [ref=e154]:
+                    - text: 学分
+                    - spinbutton [ref=e155]: "1"
+                  - generic [ref=e156]:
+                    - text: 类别
+                    - combobox [ref=e157]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e158]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e159]
+                  - button [ref=e161] [cursor=pointer]:
+                    - img [ref=e162]
+                - generic [ref=e167]:
+                  - generic [ref=e168]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e169]: 通识课
+                  - generic [ref=e170]:
+                    - text: 学分
+                    - spinbutton [ref=e171]: "8"
+                  - generic [ref=e172]:
+                    - text: 类别
+                    - combobox [ref=e173]:
+                      - option "公必" [selected]
+                      - option "专必"
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e174]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e175]
+                  - button [ref=e177] [cursor=pointer]:
+                    - img [ref=e178]
+                - generic [ref=e183]:
+                  - generic [ref=e184]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e185]: 程序设计（I）
+                  - generic [ref=e186]:
+                    - text: 学分
+                    - spinbutton [ref=e187]: "3"
+                  - generic [ref=e188]:
+                    - text: 类别
+                    - combobox [ref=e189]:
+                      - option "公必"
+                      - option "专必" [selected]
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e190]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e191]
+                  - button [ref=e193] [cursor=pointer]:
+                    - img [ref=e194]
+                - generic [ref=e199]:
+                  - generic [ref=e200]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e201]: 程序设计（I）实验
+                  - generic [ref=e202]:
+                    - text: 学分
+                    - spinbutton [ref=e203]: "1"
+                  - generic [ref=e204]:
+                    - text: 类别
+                    - combobox [ref=e205]:
+                      - option "公必"
+                      - option "专必" [selected]
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e206]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e207]
+                  - button [ref=e209] [cursor=pointer]:
+                    - img [ref=e210]
+                - generic [ref=e215]:
+                  - generic [ref=e216]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e217]: 高等数学一（I）
+                  - generic [ref=e218]:
+                    - text: 学分
+                    - spinbutton [ref=e219]: "5"
+                  - generic [ref=e220]:
+                    - text: 类别
+                    - combobox [ref=e221]:
+                      - option "公必"
+                      - option "专必" [selected]
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e222]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e223]
+                  - button [ref=e225] [cursor=pointer]:
+                    - img [ref=e226]
+                - generic [ref=e231]:
+                  - generic [ref=e232]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e233]: 线性代数
+                  - generic [ref=e234]:
+                    - text: 学分
+                    - spinbutton [ref=e235]: "3"
+                  - generic [ref=e236]:
+                    - text: 类别
+                    - combobox [ref=e237]:
+                      - option "公必"
+                      - option "专必" [selected]
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e238]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e239]
+                  - button [ref=e241] [cursor=pointer]:
+                    - img [ref=e242]
+                - generic [ref=e247]:
+                  - generic [ref=e248]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e249]: 大学物理
+                  - generic [ref=e250]:
+                    - text: 学分
+                    - spinbutton [ref=e251]: "4"
+                  - generic [ref=e252]:
+                    - text: 类别
+                    - combobox [ref=e253]:
+                      - option "公必"
+                      - option "专必" [selected]
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e254]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e255]
+                  - button [ref=e257] [cursor=pointer]:
+                    - img [ref=e258]
+                - generic [ref=e263]:
+                  - generic [ref=e264]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e265]: 程序设计（II）
+                  - generic [ref=e266]:
+                    - text: 学分
+                    - spinbutton [ref=e267]: "2"
+                  - generic [ref=e268]:
+                    - text: 类别
+                    - combobox [ref=e269]:
+                      - option "公必"
+                      - option "专必" [selected]
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e270]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e271]
+                  - button [ref=e273] [cursor=pointer]:
+                    - img [ref=e274]
+                - generic [ref=e279]:
+                  - generic [ref=e280]:
+                    - text: 课程名称
+                    - textbox "课程名称" [ref=e281]: 程序设计（II）实验
+                  - generic [ref=e282]:
+                    - text: 学分
+                    - spinbutton [ref=e283]: "1"
+                  - generic [ref=e284]:
+                    - text: 类别
+                    - combobox [ref=e285]:
+                      - option "公必"
+                      - option "专必" [selected]
+                      - option "专选"
+                      - option "通选"
+                  - generic [ref=e286]:
+                    - text: 成绩 (0-100)
+                    - spinbutton [ref=e287]
+                  - button [ref=e289] [cursor=pointer]:
+                    - img [ref=e290]
+                - button "添加课程" [ref=e293] [cursor=pointer]:
+                  - img [ref=e294]
+                  - text: 添加课程
+          - button "计算保研绩点" [ref=e296] [cursor=pointer]:
+            - img [ref=e297]
+            - text: 计算保研绩点
+  - generic [ref=e40]:
+    - paragraph [ref=e41]: © 2025 中山大学保研绩点计算器 | 数据仅供参考，请以官方公布为准
+    - paragraph [ref=e42]: 隐私说明：自动模式下密码仅用于登录，不会被存储

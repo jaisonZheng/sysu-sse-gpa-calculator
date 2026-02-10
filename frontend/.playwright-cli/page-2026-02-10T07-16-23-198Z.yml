@@ -1,0 +1,28 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - heading "中山大学保研绩点计算器" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 支持手动输入和自动爬取两种模式，精准计算保研绩点
+  - alert [ref=e8]:
+    - img [ref=e9]
+    - heading "计算规则说明" [level=5] [ref=e11]
+    - generic [ref=e12]: 综合成绩绩点 = 所有公共必修课和一年级专业必修课的平均绩点 × 0.5 + 二年级和三年级专业必修课的平均绩点 × 0.5
+  - generic [ref=e13]:
+    - tablist [ref=e14]:
+      - tab "手动模式" [selected] [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+        - text: 手动模式
+      - tab "自动爬取模式" [ref=e18] [cursor=pointer]:
+        - img [ref=e19]
+        - text: 自动爬取模式
+    - tabpanel "手动模式" [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "手动输入成绩" [level=3] [ref=e25]
+          - paragraph [ref=e26]: 手动输入各门课程的成绩，系统将自动计算保研绩点
+        - generic [ref=e29]:
+          - img [ref=e30]
+          - heading "选择你的年级" [level=2] [ref=e33]
+          - paragraph [ref=e34]: 请根据你的入学年份选择，系统会为你加载对应的培养方案
+  - generic [ref=e35]:
+    - paragraph [ref=e36]: © 2025 中山大学保研绩点计算器 | 数据仅供参考，请以官方公布为准
+    - paragraph [ref=e37]: 隐私说明：自动模式下密码仅用于登录，不会被存储
